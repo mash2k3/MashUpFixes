@@ -1,3 +1,8 @@
+MashUp Directory = special://home/addons/plugin.video.movie25/resources/libs/
+MashUp SubDir= adventure, documentaries, international, kids, live, movies_tv, plugins,sports 
+
+UrlResolver Dir = special://home/addons/script.module.urlresolver/lib/urlresolver/
+############################################################################################################################
 
 
 <item>
