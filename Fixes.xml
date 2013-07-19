@@ -13,10 +13,4 @@ UrlResolver Dir = special://home/addons/script.module.urlresolver/lib/urlresolve
 <thumbnail>plugins</thumbnail>
 </item>
 
-<item>
-<name>RealDebrid</name>
-<filename>realdebrid.py</filename>
-<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
-<path>plugins</path>
-<thumbnail>urlresolver</thumbnail>
-</item>
+
