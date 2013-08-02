@@ -5,20 +5,17 @@ UrlResolver Dir = special://home/addons/script.module.urlresolver/lib/urlresolve
 ############################################################################################################################
 year/month/day
 <date>2013/08/02</date>
-
-
-<item>
-<name>Sominal Films[COLOR red] Date: 7/19/2013[/COLOR]</name>
-<filename>yest.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
-<path>plugins</path>
-<thumbnail>plugins</thumbnail>
-</item>
+##################################################################################################################################
+thumbnails= plugins,urlresolver
+######################################################################################################################################
 
 <item>
-<name>RealDebrid[COLOR red] Date: 7/19/2013[/COLOR]</name>
-<filename>test.py</filename>
-<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
-<path>plugins</path>
-<thumbnail>urlresolver</thumbnail>
+<name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
+<filename></filename>
+<location></location>
+<path></path>
+<thumbnail></thumbnail>
 </item>
+
+##################################################################################################################################
+
