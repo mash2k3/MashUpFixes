@@ -3,7 +3,21 @@ MashUp SubDir= adventure, documentaries, international, kids, live, movies_tv, p
 
 UrlResolver Dir = special://home/addons/script.module.urlresolver/lib/urlresolver/
 ############################################################################################################################
-<date>7/19/13</date>
+##################################################################################################################################
+thumbnails= plugins,urlresolver
+######################################################################################################################################
+
+<item>
+<name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
+<filename></filename>
+<location></location>
+<path></path>
+<thumbnail></thumbnail>
+</item>
+
+##################################################################################################################################
+
+
 
 <item>
 <name>Sominal Films[COLOR red] Date: 7/19/2013[/COLOR]</name>
