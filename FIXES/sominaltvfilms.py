@@ -13,7 +13,7 @@ from universal import playbackengine, watchhistory
 addon_id = 'plugin.video.movie25'
 selfAddon = xbmcaddon.Addon(id=addon_id)
 addon = Addon('plugin.video.movie25', sys.argv)
-art = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.movie25/art', ''))
+art = main.art
 datapath = addon.get_profile()
 
 
