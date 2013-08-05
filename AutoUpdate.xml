@@ -19,11 +19,11 @@ thumbnails= plugins,urlresolver
 
 
 <item>
-<name>Mami[COLOR red] Date: 7/19/2013[/COLOR]</name>
-<filename>sominaltvfilms.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<name>RealDebrid[COLOR red] Date: 7/19/2013[/COLOR]</name>
+<filename>realdebrid.py</filename>
+<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
 <path>plugins</path>
-<thumbnail>plugins</thumbnail>
+<thumbnail>urlresolver</thumbnail>
 </item>
 ##################################################################################################################################
 
