@@ -51,7 +51,7 @@ def SEARCH():
         link=main.OPENURL(surl)
         link=link.replace('\r','').replace('\n','').replace('\t','').replace('&nbsp;','')
         match=re.compile('<img width=".+?" height=".+?" src="(.+?)" class=".+?" alt=".+?".+?<h1 class=".+?"><a class=".+?" href="(.+?)" title=".+?">(.+?)</a></h1>.+?<div class="excerpt-wrapper"><div class="excerpt"><p>(.+?)</p>').findall(link)
-        for url,thumb,name,desc in match:
+        for thumb,url,name,desc in match:
             desc=desc.replace('</div><div class="separator" style="clear: both; text-align: left;">','').replace('<span class="Apple-style-span" style="background-color: white; color: #333333; font-family: Verdana, Arial, sans-serif; font-size: 13px; line-height: 18px;">','').replace('</div><div class="separator" style="clear: both; text-align: justify;">','').replace('</div><div class="separator" style="clear: both; text-align: center;">','').replace('</span>','').replace('<span>','').replace('</div><div class="separator" style="clear: both; text-align: justify;"><span class="Apple-style-span" style="background-color: white; color: #333333; font-family: Verdana, Arial, sans-serif; font-size: 13px; line-height: 18px;">','')
             desc=desc.replace('<br>','').replace('</br>','').replace('</div>','').replace('<div>','')
             main.addDirM(name,url,621,thumb,desc,thumb,'','','')
@@ -84,7 +84,7 @@ def LIST(mname,murl):
         loadedLinks = 0
         remaining_display = 'Movies loaded :: [B]'+str(loadedLinks)+' / '+str(totalLinks)+'[/B].'
         dialogWait.update(0,'[B]Will load instantly from now on[/B]',remaining_display)
-        for url,thumb,name,desc in match:
+        for thumb,url,name,desc in match:
                 desc=desc.replace('  ','')
                 main.addDirM(name,url,621,thumb,desc,thumb,'','','')
                 loadedLinks = loadedLinks + 1
