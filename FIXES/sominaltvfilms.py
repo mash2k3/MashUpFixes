@@ -23,7 +23,7 @@ wh = watchhistory.WatchHistory('plugin.video.movie25')
 
 def MAIN():
         main.GA("Plugin","SominalTv")
-        main.addDir('Search','http://www.movie25.com/',624,art+'/search.png')
+        main.addDir('Search','xoxe',624,art+'/search.png')
         main.addDir('Hindi','http://www.sominaltvfilms.com/category/hindi-movies',620,art+'/wfs/hindi.png')
         main.addDir('Telugu','http://www.sominaltvfilms.com/category/telugu',620,art+'/wfs/telugu.png')
         main.addDir('Tamil','http://www.sominaltvfilms.com/category/tamil',620,art+'/wfs/tamil.png')
@@ -50,11 +50,12 @@ def SEARCH():
                 surl='http://www.sominaltvfilms.com/?s='+encode
         link=main.OPENURL(surl)
         link=link.replace('\r','').replace('\n','').replace('\t','').replace('&nbsp;','')
-        match=re.compile('<a class="darken" href="([^<]+)">                                                            <img width=".+?" height=".+?" src="(.+?)" class=".+?".+?<h1 class=".+?"><a class=".+?" href=".+?" title="(.+?)">.+?</a></h1>.+?<div class="excerpt">.+?<p>(.+?)</p>').findall(link)
+        match=re.compile('<img width=".+?" height=".+?" src="(.+?)" class=".+?" alt=".+?".+?<h1 class=".+?"><a class=".+?" href="(.+?)" title=".+?">(.+?)</a></h1>.+?<div class="excerpt-wrapper"><div class="excerpt"><p>(.+?)</p>').findall(link)
         for url,thumb,name,desc in match:
             desc=desc.replace('</div><div class="separator" style="clear: both; text-align: left;">','').replace('<span class="Apple-style-span" style="background-color: white; color: #333333; font-family: Verdana, Arial, sans-serif; font-size: 13px; line-height: 18px;">','').replace('</div><div class="separator" style="clear: both; text-align: justify;">','').replace('</div><div class="separator" style="clear: both; text-align: center;">','').replace('</span>','').replace('<span>','').replace('</div><div class="separator" style="clear: both; text-align: justify;"><span class="Apple-style-span" style="background-color: white; color: #333333; font-family: Verdana, Arial, sans-serif; font-size: 13px; line-height: 18px;">','')
             desc=desc.replace('<br>','').replace('</br>','').replace('</div>','').replace('<div>','')
             main.addDirM(name,url,621,thumb,desc,thumb,'','','')
+
                
 
 def LIST(mname,murl):
@@ -76,7 +77,7 @@ def LIST(mname,murl):
                 main.addDir('Dubbed BluRay','http://www.sominaltvfilms.com/category/hindi-dubbed-blurays',620,art+'/wfs/bluray.png')
         link=main.OPENURL(murl)
         link=link.replace('\r','').replace('\n','').replace('\t','').replace('&nbsp;','')
-        match=re.compile('<a class="darken" href="(.+?)">                                                            <img width=".+?" height=".+?" src="(.+?)" class=".+?".+?/>.+?href=".+?" title=".+?">(.+?)</a></h2>.+?<div class="excerpt">(.+?)</div>').findall(link)
+        match=re.compile('<img width=".+?" height=".+?" src="(.+?)" class=".+?" alt=".+?/></a></div></center><div class=".+?"><h2 class=".+?"><a class=".+?" href="(.+?)" title=".+?">(.+?)</a></h2><div class="excerpt">(.+?)...</div>').findall(link)
         dialogWait = xbmcgui.DialogProgress()
         ret = dialogWait.create('Please wait until Show list is cached.')
         totalLinks = len(match)
