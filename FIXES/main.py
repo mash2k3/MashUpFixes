@@ -634,11 +634,11 @@ def resolve_billionuploads(url):
     try:
             #########
             dialog = xbmcgui.DialogProgress()
-            dialog.create('Resolving', 'Resolving BillionUploads Link...')       
+            dialog.create('Resolving', 'Resolving Mash Up BillionUploads Link...')       
             dialog.update(0)
         
             print 'Mash Up BillionUploads - Requesting GET URL: %s' % url
-            html = net.http_GET(url).content
+            html = net().http_GET(url).content
                
             #Check page for any error msgs
             if re.search('This server is in maintenance mode', html):
@@ -692,13 +692,13 @@ def resolve_billionuploads(url):
 
             #They need to wait for the link to activate in order to get the proper 2nd page
             dialog.close()
-            common.addon.show_countdown(3, 'Please Wait', 'Resolving')
+            addon.show_countdown(3, 'Please Wait', 'Resolving')
                
             dialog.create('Resolving', 'Resolving Mash Up BillionUploads Link...') 
             dialog.update(50)
         
             print 'Mash Up BillionUploads - Requesting POST URL: %s DATA: %s' % (url, data)
-            html = net.http_POST(url, data).content
+            html = net().http_POST(url, data).content
             dialog.update(100)
             link = re.search('&product_download_url=(.+?)"', html).group(1)
             link = link + "|referer=" + url
@@ -715,13 +715,13 @@ def resolve_180upload(url):
     try:
         datapath = addon.get_profile()
         dialog = xbmcgui.DialogProgress()
-        dialog.create('Resolving', 'Resolving 180Upload Link...')
+        dialog.create('Resolving', 'Resolving Mash Up 180Upload Link...')
         dialog.update(0)
         
         puzzle_img = os.path.join(datapath, "180_puzzle.png")
         
         print 'Mash Up 180Upload - Requesting GET URL: %s' % url
-        html = net.http_GET(url).content
+        html = net().http_GET(url).content
 
         dialog.update(50)
                 
@@ -739,9 +739,9 @@ def resolve_180upload(url):
 
         if solvemedia:
            dialog.close()
-           html = net.http_GET(solvemedia.group(1)).content
+           html = net().http_GET(solvemedia.group(1)).content
            hugekey=re.search('id="adcopy_challenge" value="(.+?)">', html).group(1)
-           open(puzzle_img, 'wb').write(net.http_GET("http://api.solvemedia.com%s" % re.search('<img src="(.+?)"', html).group(1)).content)
+           open(puzzle_img, 'wb').write(net().http_GET("http://api.solvemedia.com%s" % re.search('<img src="(.+?)"', html).group(1)).content)
            img = xbmcgui.ControlImage(450,15,400,130, puzzle_img)
            wdlg = xbmcgui.WindowDialog()
            wdlg.addControl(img)
@@ -770,7 +770,7 @@ def resolve_180upload(url):
                data.update({'adcopy_challenge': hugekey,'adcopy_response': solution})
 
         print 'Mash Up 180Upload - Requesting POST URL: %s' % url
-        html = net.http_POST(url, data).content
+        html = net().http_POST(url, data).content
         dialog.update(100)
         
         link = re.search('<a href="(.+?)" onclick="thanks\(\)">Download now!</a>', html)

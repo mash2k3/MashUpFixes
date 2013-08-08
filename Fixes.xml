@@ -16,6 +16,16 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 ##################################################################################################################################
+
+<item>
+<name>Main Script V3[COLOR red] Date: 8/8/2013[/COLOR]</name>
+<filename>main.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/</location>
+<path>libs</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+
 <item>
 <name>180upload[COLOR red] Date: 8/08/2013[/COLOR]</name>
 <filename>180upload.py</filename>
@@ -33,13 +43,6 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 
-<item>
-<name>Main Script V2[COLOR red] Date: 8/8/2013[/COLOR]</name>
-<filename>main.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/</location>
-<path>libs</path>
-<thumbnail>plugins</thumbnail>
-</item>
 
 <item>
 <name>Sominal Films[COLOR red] Date: 8/8/2013[/COLOR]</name>
