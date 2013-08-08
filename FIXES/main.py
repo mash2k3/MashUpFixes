@@ -2128,15 +2128,18 @@ def addDLog(name,url,mode,iconimage,plot,fanart,dur,genre,year):
             video_type='episode'
             sea=infoLabels['season']
             epi=infoLabels['episode']
+            cname=infoLabels['title']
         elif re.findall('Season(.+?)Episode([^<]+)',name,re.I):
             infoLabels =GETMETAEpiT(name,iconimage,plot)
             video_type='episode'
             sea=infoLabels['season']
             epi=infoLabels['episode']
+            cname=infoLabels['title']
         else:
             infoLabels =GETMETAT(name,genre,fanart,iconimage)
             video_type='movie'
             tmdbid=infoLabels['tmdb_id']
+            cname=infoLabels['metaName']
         if selfAddon.getSetting("meta-view") == "true":
                 xbmcplugin.setContent(int(sys.argv[1]), 'Movies')
                 if infoLabels['overlay'] == 6:
@@ -2157,7 +2160,6 @@ def addDLog(name,url,mode,iconimage,plot,fanart,dur,genre,year):
         if selfAddon.getSetting("meta-view") == "true":
                 
                 imdb=infoLabels['imdb_id']
-                cname=infoLabels['metaName']
                 Commands.append(('Play Trailer','XBMC.RunPlugin(%s?mode=782&name=%s&url=%s&iconimage=%s)'% (sys.argv[0],cname,url,imdb)))
                 Commands.append((watched_mark, 'XBMC.RunPlugin(%s?mode=777&name=%s&url=%s&iconimage=%s)' % (sys.argv[0], cname, video_type,imdb)))
                 Commands.append(('Refresh Metadata', 'XBMC.RunPlugin(%s?mode=778&name=%s&url=%s&iconimage=%s)' % (sys.argv[0], cname, video_type,imdb)))
