@@ -26,7 +26,7 @@ if selfAddon.getSetting('visitor_ga')=='':
     selfAddon.setSetting('visitor_ga',str(randint(0, 0x7fffffff)))
 
 VERSION = "1.3.7"
-PATH = "Mash Up-"            
+PATH = "MashUp-"            
 UATRACK="UA-38312513-1" 
 
 try:
