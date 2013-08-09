@@ -318,7 +318,7 @@ def GETMETAT(mname,genre,fan,thumb):
                     fan=Dir+'fanart.jpg'
                 else:
                     fan=fan
-                infoLabels = {'title': mname,'cover_url': thumb,'backdrop_url': fan,'season': '','episode': '','year': '','plot': '','genre': genre,'imdb_id': '','tmdb_id':''}
+                infoLabels = {'title': mname,'metaName': mname,'cover_url': thumb,'backdrop_url': fan,'season': '','episode': '','year': '','plot': '','genre': genre,'imdb_id': '','tmdb_id':''}
         return infoLabels
 
 ################################################################################ TV Shows Metahandler ##########################################################################################################
@@ -374,6 +374,7 @@ def GETMETAEpi(mname,data):
         return infoLabels
 
 def GETMETAEpiT(mname,thumb,desc):
+        originalName=mname
         if selfAddon.getSetting("meta-view") == "true":
                 mname  = mname.replace('[COLOR purple]','').replace('[COLOR green]','').replace('[COLOR yellow]','').replace('[COLOR aqua]','').replace('[COLOR blue]','').replace('[COLOR red]','').replace('[/COLOR]','')
                 mname  = mname.replace('New Episode','').replace('Main Event','').replace('New Episodes','')
@@ -445,10 +446,12 @@ def GETMETAEpiT(mname,thumb,desc):
                 
                 infoLabels['showtitle']=tit
                 infoLabels['year']=year
+                infoLabels['metaName']=infoLabels['title']
+                infoLabels['title']=originalName
                    
         else:
                 fan=Dir+'fanart.jpg'
-                infoLabels = {'title': mname,'cover_url': thumb,'backdrop_url': fan,'season': '','episode': '','year': '','plot': desc,'genre': '','imdb_id': ''}       
+                infoLabels = {'title': mname,'metaName': mname,'cover_url': thumb,'backdrop_url': fan,'season': '','episode': '','year': '','plot': desc,'genre': '','imdb_id': ''}       
         
         return infoLabels
 ############################################################################### Playback resume/ mark as watched #################################################################################
@@ -1946,7 +1949,7 @@ def addDown4(name,url,mode,iconimage,plot,fanart,dur,genre,year):
             video_type='episode'
             sea=infoLabels['season']
             epi=infoLabels['episode']
-            cname=infoLabels['title']
+            cname=infoLabels['metaName']
             xbmcplugin.setContent(int(sys.argv[1]), 'episodes')
             script1=Dir+'/resources/scripts/addFavsTE.py'
             script2=Dir+'/resources/scripts/delFavsTE.py'
@@ -1955,7 +1958,7 @@ def addDown4(name,url,mode,iconimage,plot,fanart,dur,genre,year):
             video_type='episode'
             sea=infoLabels['season']
             epi=infoLabels['episode']
-            cname=infoLabels['title']
+            cname=infoLabels['metaName']
             xbmcplugin.setContent(int(sys.argv[1]), 'episodes')
             script1=Dir+'/resources/scripts/addFavsTE.py'
             script2=Dir+'/resources/scripts/delFavsTE.py'
@@ -2128,13 +2131,13 @@ def addDLog(name,url,mode,iconimage,plot,fanart,dur,genre,year):
             video_type='episode'
             sea=infoLabels['season']
             epi=infoLabels['episode']
-            cname=infoLabels['title']
+            cname=infoLabels['metaName']
         elif re.findall('Season(.+?)Episode([^<]+)',name,re.I):
             infoLabels =GETMETAEpiT(name,iconimage,plot)
             video_type='episode'
             sea=infoLabels['season']
             epi=infoLabels['episode']
-            cname=infoLabels['title']
+            cname=infoLabels['metaName']
         else:
             infoLabels =GETMETAT(name,genre,fanart,iconimage)
             video_type='movie'
