@@ -1498,6 +1498,7 @@ def addPlayTE(name,url,mode,iconimage,plot,fanart,dur,genre,year):
         img=infoLabels['cover_url']
         type='PLAY'
         plot=plot.encode('ascii', 'ignore')
+        
         plot=plot.replace(",",'.')
         name=name.replace(",",'')
         args=[(url,name,mode,str(img),str(plot),type)]
@@ -1509,6 +1510,7 @@ def addPlayTE(name,url,mode,iconimage,plot,fanart,dur,genre,year):
         if selfAddon.getSetting("meta-view") == "true":
                 video_type='episode'
                 cname=infoLabels['title']
+                cname=cname.decode('ascii', 'ignore')
                 sea=infoLabels['season']
                 epi=infoLabels['episode']
                 imdb_id=infoLabels['imdb_id']
