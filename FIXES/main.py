@@ -847,7 +847,7 @@ class StopDownloading(Exception):
 def GetUrliW(url):
         link=OPENURL(url)
         link=unescapes(link)
-        match=re.compile('class=frame src="(.+?)"').findall(link)
+        match=re.compile('<(?:iframe|pagespeed_iframe).+?src=\"(.+?)\"').findall(link)
         link=match[0]
         return link
 
@@ -1457,7 +1457,8 @@ def addDirTE(name,url,mode,iconimage,plot,fanart,dur,genre,year):
               ("[B][COLOR red]Remove[/COLOR][/B] from My Fav's","XBMC.RunScript(" + script2 + ", " + str(args) + ")")]
         if selfAddon.getSetting("meta-view") == "true":
                 video_type='episode'
-                cname=infoLabels['title']               
+                cname=infoLabels['title']
+                cname=cname.decode('ascii', 'ignore')
                 sea=infoLabels['season']
                 epi=infoLabels['episode']
                 imdb_id=infoLabels['imdb_id']
