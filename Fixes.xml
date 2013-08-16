@@ -18,6 +18,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 ##################################################################################################################################
 
 <item>
+<name>Noobroom[COLOR red] Date: 8/16/2013 Fixed by the one[/COLOR]</name>
+<filename>starplay.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>movies_tv</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
 <name>iWatchonline[COLOR red] Date: 8/15/2013[/COLOR]</name>
 <filename>iwatchonline.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
