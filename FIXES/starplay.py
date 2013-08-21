@@ -33,16 +33,19 @@ def LISTSP5(murl):
         log_in = net().http_POST(lurl,{'email':user,'password':passw}).content
         link = net().http_GET(murl).content
         main.addLink("[COLOR red]For Download Options, Bring up Context Menu Over Selected Link.[/COLOR]",'',art+'/link.png')
-        match=re.compile(" href='(.+?)'>(.+?)</a><br>(.+?) - <").findall(link)
+        match=re.compile("<br>(.+?) - <a[^>]+?href='(.+?)'>(.+?)</a>").findall(link)
         dialogWait = xbmcgui.DialogProgress()
         ret = dialogWait.create('Please wait until Movie list is cached.')
         totalLinks = len(match)
         loadedLinks = 0
         remaining_display = 'Movies loaded :: [B]'+str(loadedLinks)+' / '+str(totalLinks)+'[/B].'
         dialogWait.update(0, '[B]Will load instantly from now on[/B]',remaining_display)
-        for url,name,year in match:
+        for year,url,name in match:
                 name=name.replace(':','')
-                main.addDown3(name+' [COLOR red]('+year+')[/COLOR]',"http://noobroom7.com/"+url,58,'','')
+                if(year=='0'):
+                        year='0000'  
+                url=GetNewUrl()+url
+                main.addDown3(name+' [COLOR red]('+year+')[/COLOR]',url,58,'','')
                 loadedLinks = loadedLinks + 1
                 percent = (loadedLinks * 100)/totalLinks
                 remaining_display = 'Movies loaded :: [B]'+str(loadedLinks)+' / '+str(totalLinks)+'[/B].'
@@ -66,9 +69,10 @@ def find_noobroom_video_url(page_url):
     log_in = net1.http_POST(url,{'email':user,'password':passw}).content
     #print net1.get_cookies()
     html = net1.http_GET(page_url).content
+    print html
     media_id = re.compile('"file": "(.+?)"').findall(html)[0]
     fork_url = re.compile('"streamer": "(.+?)"').findall(html)[0] + '&start=0&file=' + media_id
-    #print fork_url
+    print fork_url
 
     class MyHTTPRedirectHandler(urllib2.HTTPRedirectHandler):    
         def http_error_302(self, req, fp, code, msg, headers):
