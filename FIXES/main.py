@@ -968,21 +968,25 @@ def GetNoobroom():
         match=re.compile('value="(.+?)">').findall(link)
         return match[0]            
 def Noobroom(page_url):
-    import re
-    import urllib2
-    headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.71 Safari/537.36', 'Cookie':'place=1; save=1'}
-
     user = selfAddon.getSetting('username')
     passw = selfAddon.getSetting('password')
+    import re
+    import urllib2
+    
+    headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.71 Safari/537.36'}
+   
+
     url=GetNoobroom()+'/login2.php'
-    log_in = net().http_POST(url,{'email':user,'password':passw}).content
-    html = net().http_GET(page_url).content
+    net1 = net()
+    log_in = net1.http_POST(url,{'email':user,'password':passw}).content
+    #print net1.get_cookies()
+    html = net1.http_GET(page_url).content
     media_id = re.compile('"file": "(.+?)"').findall(html)[0]
     fork_url = re.compile('"streamer": "(.+?)"').findall(html)[0] + '&start=0&file=' + media_id
-    #print fork_url
 
     class MyHTTPRedirectHandler(urllib2.HTTPRedirectHandler):    
         def http_error_302(self, req, fp, code, msg, headers):
+            #print headers
             self.video_url = headers['Location']
             #print self.video_url
             return urllib2.HTTPRedirectHandler.http_error_302(self, req, fp, code, msg, headers)
@@ -991,7 +995,10 @@ def Noobroom(page_url):
 
     myhr = MyHTTPRedirectHandler()
 
-    opener = urllib2.build_opener(myhr)
+    opener = urllib2.build_opener(
+        urllib2.HTTPCookieProcessor(net1._cj),
+        urllib2.HTTPBasicAuthHandler(),
+        myhr)
     urllib2.install_opener(opener)
 
     req = urllib2.Request(fork_url)
@@ -1002,7 +1009,8 @@ def Noobroom(page_url):
     except:
         pass
 
-    return myhr.video_url    
+    #print myhr.video_url
+    return myhr.video_url   
 
 def Download_SourceB(name,url):#starplay/noobroom
     originalName=name
