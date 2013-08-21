@@ -69,10 +69,8 @@ def find_noobroom_video_url(page_url):
     log_in = net1.http_POST(url,{'email':user,'password':passw}).content
     #print net1.get_cookies()
     html = net1.http_GET(page_url).content
-    print html
     media_id = re.compile('"file": "(.+?)"').findall(html)[0]
     fork_url = re.compile('"streamer": "(.+?)"').findall(html)[0] + '&start=0&file=' + media_id
-    print fork_url
 
     class MyHTTPRedirectHandler(urllib2.HTTPRedirectHandler):    
         def http_error_302(self, req, fp, code, msg, headers):
