@@ -28,8 +28,9 @@ def GetNewUrl():
 
 
 def LISTSP5(murl):
-        murl=GetNewUrl()+'/latest.php'
-        lurl=GetNewUrl()+'/login2.php'
+        nrDomain = GetNewUrl();
+        murl=nrDomain+'/latest.php'
+        lurl=nrDomain+'/login2.php'
         log_in = net().http_POST(lurl,{'email':user,'password':passw}).content
         link = net().http_GET(murl).content
         main.addLink("[COLOR red]For Download Options, Bring up Context Menu Over Selected Link.[/COLOR]",'',art+'/link.png')
@@ -44,7 +45,7 @@ def LISTSP5(murl):
                 name=name.replace(':','')
                 if(year=='0'):
                         year='0000'  
-                url=GetNewUrl()+url
+                url=nrDomain+url
                 main.addDown3(name+' [COLOR red]('+year+')[/COLOR]',url,58,'','')
                 loadedLinks = loadedLinks + 1
                 percent = (loadedLinks * 100)/totalLinks
