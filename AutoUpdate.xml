@@ -4,32 +4,31 @@ MashUp SubDir= adventure, documentaries, international, kids, live, movies_tv, p
 UrlResolver Dir = special://home/addons/script.module.urlresolver/lib/urlresolver/
 ############################################################################################################################
 year/month/day
-<date>2013/08/12</date>
+<date>2013/08/13</date>
 ##################################################################################################################################
 thumbnails= plugins,urlresolver
 ######################################################################################################################################
 <item>
-<name>iWatchonline[COLOR red] Date: 8/15/2013[/COLOR]</name>
-<filename>iwatchonline.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
-<path>plugins</path>
-<thumbnail>plugins</thumbnail>
-</item>
-
-<item>
-<name>Main Script V6[COLOR red] Date: 8/15/2013[/COLOR]</name>
+<name>Main Script V7[COLOR red] Date: 8/21/2013[/COLOR]</name>
 <filename>main.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/</location>
 <path>libs</path>
 <thumbnail>plugins</thumbnail>
 </item>
 
-
 <item>
-<name>Movie1k[COLOR red] Date: 8/15/2013[/COLOR]</name>
-<filename>movie1k.py</filename>
+<name>Noobroom[COLOR red] Date: 8/21/2013[/COLOR]</name>
+<filename>starplay.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
 <path>movies_tv</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
+<name>iWatchonline[COLOR red] Date: 8/21/2013[/COLOR]</name>
+<filename>iwatchonline.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>plugins</path>
 <thumbnail>plugins</thumbnail>
 </item>
 

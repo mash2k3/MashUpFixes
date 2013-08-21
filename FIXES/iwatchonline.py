@@ -216,15 +216,18 @@ def GotoPage(url):
 def iWatchGenreTV():
         link=main.OPENURL('http://www.iwatchonline.to/tv-show')
         link=link.replace('\r','').replace('\n','').replace('\t','').replace('&nbsp;','')
-        match=re.compile('<li><a href=".?gener=([^<]+)">(.+?)</a></li>').findall(link)
+        match=re.compile('<li.+?a href=".?gener=([^<]+)">(.+?)</a>.+?/li>').findall(link)
         for url,genre in match:
-                main.addDir(genre,'http://www.iwatchonline.to/main/content_more/tv/?gener='+url+'&start=0',589,art+'/folder.png')
+                genre=genre.replace('  ','')
+                if not 'Adult' in genre:
+                    main.addDir(genre,'http://www.iwatchonline.to/main/content_more/tv/?gener='+url+'&start=0',589,art+'/folder.png')
         main.GA("Tvshows","GenreT")
 def iWatchGenreM():
         link=main.OPENURL('http://www.iwatchonline.to/movies')
         link=link.replace('\r','').replace('\n','').replace('\t','').replace('&nbsp;','')
-        match=re.compile('<li><a href=".?gener=([^<]+)">(.+?)</a></li>').findall(link)
+        match=re.compile('<li.+?a href=".?gener=([^<]+)">(.+?)</a>.+?/li>').findall(link)
         for url,genre in match:
+            genre=genre.replace('  ','')
             if not 'Adult' in genre:
                 main.addDir(genre,'http://www.iwatchonline.to/main/content_more/movies/?gener='+url+'&start=0',587,art+'/folder.png')
         main.GA("Movies","GenreM")                
@@ -359,7 +362,7 @@ def PANEL_REPLACER(content):
 
 def iWatchEpisode(mname,murl):
         seanum  = mname.split('Season ')[1]
-        tv_content=main.OPENURL2(murl)
+        tv_content=main.OPENURL(murl)
         link = PANEL_REPLACER(tv_content)
         descs=re.compile('<meta name="description" content="(.+?)">').findall(link)
         if len(descs)>0:
@@ -404,7 +407,7 @@ def GetUrl(url):
 
 def iWatchLINK(mname,url):      
         xbmc.executebuiltin("XBMC.Notification(Please Wait!,Collecting Hosts,1500)")
-        link=main.OPENURL2(url)
+        link=main.OPENURL(url)
         movie_content = main.unescapes(link)
         movie_content = re.sub("\\\"", "\"", movie_content)
         movie_content=movie_content.replace('\'','')  
@@ -414,7 +417,7 @@ def iWatchLINK(mname,url):
         match=re.compile('<a href="(.+?)".+?<img.+?> (.+?)</a>.+?<td>.+?<td>.+?<td>(.+?)</td>', re.DOTALL).findall(link2)
         
         
-        for url, name, qua in match:
+        for url, name, qua in match[1:]:
             name=name.replace(' ','')
             if name[0:1]=='.':
                 name=name[1:]

@@ -16,6 +16,13 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 ##################################################################################################################################
+<item>
+<name>Main Script V7[COLOR red] Date: 8/21/2013[/COLOR]</name>
+<filename>main.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/</location>
+<path>libs</path>
+<thumbnail>plugins</thumbnail>
+</item>
 
 <item>
 <name>Noobroom[COLOR red] Date: 8/21/2013[/COLOR]</name>
@@ -26,7 +33,7 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 <item>
-<name>iWatchonline[COLOR red] Date: 8/15/2013[/COLOR]</name>
+<name>iWatchonline[COLOR red] Date: 8/21/2013[/COLOR]</name>
 <filename>iwatchonline.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
 <path>plugins</path>
@@ -41,13 +48,6 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 <thumbnail>plugins</thumbnail>
 </item>
 
-<item>
-<name>Main Script V6[COLOR red] Date: 8/15/2013[/COLOR]</name>
-<filename>main.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/</location>
-<path>libs</path>
-<thumbnail>plugins</thumbnail>
-</item>
 
 
 <item>

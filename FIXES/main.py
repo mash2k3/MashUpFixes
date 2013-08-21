@@ -269,6 +269,12 @@ def GETMETAB(mname,genre,year,thumb):
                 infoLabels = {'title': mname,'cover_url': thumb,'backdrop_url': fan,'season': '','episode': '','year': year,'plot': '','genre': genre,'imdb_id': ''}
         return infoLabels
 
+def formatCast(cast):
+        roles = "\n\n"
+        for role in cast:
+            roles =  roles + "[COLOR blue]" + role[0] + "[/COLOR] as " + role[1] + " | "
+        return roles
+
 def GETMETAT(mname,genre,fan,thumb):
         originalName=mname
         if selfAddon.getSetting("meta-view") == "true":
@@ -311,6 +317,8 @@ def GETMETAT(mname,genre,fan,thumb):
                     infoLabels['cover_url']=thumb
                 infoLabels['metaName']=infoLabels['title']
                 infoLabels['title']=originalName
+
+                infoLabels['plot'] = infoLabels['plot'] + formatCast(infoLabels['cast'])
         else:
                 if thumb=='':
                     thumb=art+'vidicon.png'
