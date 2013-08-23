@@ -10,7 +10,7 @@ addon_id = 'plugin.video.movie25'
 selfAddon = xbmcaddon.Addon(id=addon_id)
 addon = Addon('plugin.video.movie25', sys.argv)
 art = main.art
-
+smalllogo=art+'/smallicon.png'
     
 wh = watchhistory.WatchHistory('plugin.video.movie25')
 user = selfAddon.getSetting('username')
@@ -33,6 +33,9 @@ def LISTSP5(murl):
         lurl=nrDomain+'/login2.php'
         log_in = net().http_POST(lurl,{'email':user,'password':passw}).content
         link = net().http_GET(murl).content
+        r = re.findall('Membership by invitation only', link)
+        if r:
+                xbmc.executebuiltin("XBMC.Notification(Sorry!,Email or Password Incorrect,10000,"+smalllogo+")")        
         main.addLink("[COLOR red]For Download Options, Bring up Context Menu Over Selected Link.[/COLOR]",'',art+'/link.png')
         match=re.compile("<br>(.+?) - <a[^>]+?href='(.+?)'>(.+?)</a>").findall(link)
         dialogWait = xbmcgui.DialogProgress()
