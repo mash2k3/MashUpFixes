@@ -16,8 +16,17 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 ##################################################################################################################################
+
 <item>
-<name>Noobroom[COLOR red] Date: 8/23/2013[/COLOR]</name>
+<name>Main Script V8[COLOR red] Date: 8/26/2013[/COLOR]</name>
+<filename>main.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/</location>
+<path>libs</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
+<name>Noobroom[COLOR red] Date: 8/26/2013[/COLOR]</name>
 <filename>starplay.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
 <path>movies_tv</path>
@@ -25,13 +34,12 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 <item>
-<name>Main Script V7[COLOR red] Date: 8/21/2013[/COLOR]</name>
-<filename>main.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/</location>
-<path>libs</path>
+<name>VIPlaylist[COLOR red] Date: 8/26/2013[/COLOR]</name>
+<filename>movieplaylist.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>movies_tv</path>
 <thumbnail>plugins</thumbnail>
 </item>
-
 
 <item>
 <name>iWatchonline[COLOR red] Date: 8/21/2013[/COLOR]</name>

@@ -1,4 +1,3 @@
-
 import urllib,urllib2,re,cookielib,string, urlparse,sys,os
 import xbmc, xbmcgui, xbmcaddon, xbmcplugin
 import urlresolver
@@ -278,7 +277,7 @@ def formatCast(cast):
 def GETMETAT(mname,genre,fan,thumb):
         originalName=mname
         if selfAddon.getSetting("meta-view") == "true":
-                mname  = mname.replace(' EXTENDED and UNRATED','').replace('[COLOR purple]','').replace('MaxPowers','').replace('720p','').replace('1080p','').replace('TS','').replace('HD','').replace('R6','').replace('H.M.','').replace('HackerMil','').replace('[COLOR green]','').replace('[COLOR yellow]','').replace('[COLOR aqua]','').replace('[COLOR blue]','').replace('[COLOR red]','').replace('[/COLOR]','').replace('(','').replace(')','').replace('[','').replace(']','')
+                mname  = mname.replace(' EXTENDED and UNRATED','').replace('Webrip','').replace('[COLOR purple]','').replace('MaxPowers','').replace('720p','').replace('1080p','').replace('TS','').replace('HD','').replace('R6','').replace('H.M.','').replace('HackerMil','').replace('[COLOR green]','').replace('[COLOR yellow]','').replace('[COLOR aqua]','').replace('[COLOR blue]','').replace('[COLOR red]','').replace('[/COLOR]','').replace('(','').replace(')','').replace('[','').replace(']','')
                 mname  = re.sub('Cam(?![A-Za-z])','',mname)
                 if re.findall('\s\d{4}',mname):
                     r = re.split('\s\d{4}',mname,re.DOTALL)
@@ -294,6 +293,9 @@ def GETMETAT(mname,genre,fan,thumb):
                     year=''
                 name = name.decode("ascii", "ignore")
                 meta = grab.get_meta('movie',name,None,None,year='')# first is Type/movie or tvshow, name of show,tvdb id,imdb id,string of year,unwatched = 6/watched  = 7
+                if not meta['year']:
+                      name  = re.sub(':.*','',name)
+                      meta = grab.get_meta('movie',name,None,None,'')
                 print "Movie mode: %s"%name
                 infoLabels = {'rating': meta['rating'],'duration': meta['duration'],'genre': meta['genre'],'mpaa':"rated %s"%meta['mpaa'],
                   'plot': meta['plot'],'title': meta['title'],'writer': meta['writer'],'cover_url': meta['cover_url'],'overlay':meta['overlay'],
@@ -316,6 +318,8 @@ def GETMETAT(mname,genre,fan,thumb):
                 if infoLabels['cover_url']=='':
                     thumb=art+'vidicon.png'
                     infoLabels['cover_url']=thumb
+            	if(int(year+'0')):                      
+                    infoLabels['year']=year 
                 infoLabels['metaName']=infoLabels['title']
                 infoLabels['title']=originalName
 
@@ -839,6 +843,95 @@ def resolve_videto(url):
         addon.show_small_popup('[B][COLOR green]Mash Up: Vidto Resolver[/COLOR][/B]','Error, Check XBMC.log for Details',
                                5000, error_logo)
         return
+
+def resolve_epicshare(url):
+
+    try:
+        
+        puzzle_img = os.path.join(datapath, "epicshare_puzzle.png")
+        
+        #Show dialog box so user knows something is happening
+        dialog = xbmcgui.DialogProgress()
+        dialog.create('Resolving', 'Resolving EpicShare Link...')
+        dialog.update(0)
+        
+        print 'EpicShare - Requesting GET URL: %s' % url
+        html = net().http_GET(url).content
+
+        dialog.update(50)
+        
+        #Check page for any error msgs
+        if re.search('This server is in maintenance mode', html):
+            print '***** EpicShare - Site reported maintenance mode'
+            raise Exception('File is currently unavailable on the host')
+        if re.search('<b>File Not Found</b>', html):
+            print '***** EpicShare - File not found'
+            raise Exception('File has been deleted')
+
+
+        data = {}
+        r = re.findall(r'type="hidden" name="(.+?)" value="(.+?)">', html)
+
+        if r:
+            for name, value in r:
+                data[name] = value
+        else:
+            print '***** EpicShare - Cannot find data values'
+            raise Exception('Unable to resolve EpicShare Link')
+        
+        #Check for SolveMedia Captcha image
+        solvemedia = re.search('<iframe src="(http://api.solvemedia.com.+?)"', html)
+
+        if solvemedia:
+           dialog.close()
+           html = net().http_GET(solvemedia.group(1)).content
+           hugekey=re.search('id="adcopy_challenge" value="(.+?)">', html).group(1)
+           open(puzzle_img, 'wb').write(net().http_GET("http://api.solvemedia.com%s" % re.search('<img src="(.+?)"', html).group(1)).content)
+           img = xbmcgui.ControlImage(450,15,400,130, puzzle_img)
+           wdlg = xbmcgui.WindowDialog()
+           wdlg.addControl(img)
+           wdlg.show()
+        
+           xbmc.sleep(3000)
+
+           kb = xbmc.Keyboard('', 'Type the letters in the image', False)
+           kb.doModal()
+           capcode = kb.getText()
+   
+           if (kb.isConfirmed()):
+               userInput = kb.getText()
+               if userInput != '':
+                   solution = kb.getText()
+               elif userInput == '':
+                   Notify('big', 'No text entered', 'You must enter text in the image to access video', '')
+                   return False
+           else:
+               return False
+               
+           wdlg.close()
+           dialog.create('Resolving', 'Resolving EpicShare Link...') 
+           dialog.update(50)
+           if solution:
+               data.update({'adcopy_challenge': hugekey,'adcopy_response': solution})
+
+        print 'EpicShare - Requesting POST URL: %s' % url
+        html = net().http_POST(url, data).content
+        dialog.update(100)
+        
+        link = re.search('<a id="lnk_download"  href=".+?product_download_url=(.+?)">', html)
+        if link:
+            print 'EpicShare Link Found: %s' % link.group(1)
+            return link.group(1)
+        else:
+            print '***** EpicShare - Cannot find final link'
+            raise Exception('Unable to resolve EpicShare Link')
+        
+    except Exception, e:
+        print '**** EpicShare Error occured: %s' % e
+        raise
+
+    finally:
+        dialog.close()
 ############################################################################### Download Code ###########################################################################################
 downloadPath = selfAddon.getSetting('download-folder')
 DownloadLog=os.path.join(datapath,'Downloads')
@@ -874,7 +967,7 @@ def Download_Source(name,url):
     originalName=name
     match=re.compile('watchseries.lt').findall(url)
     if match:
-        name=name.replace('/','').replace('.','')
+        name=name.replace('/','').replace('.','').replace(':','')
         name=name.replace('[DVD]','').replace('[TS]','').replace('[TC]','').replace('[CAM]','').replace('[SCREENER]','').replace('[COLOR blue]','').replace('[COLOR red]','').replace('[/COLOR]','').replace('[COLOR]','')
         name=name.replace(' : Gorillavid','').replace(' : Divxstage','').replace(' : Movshare','').replace(' : Sharesix','').replace(' : Movpod','').replace(' : Daclips','').replace(' : Videoweed','')
         name=name.replace(' : Played','').replace(' : MovDivx','').replace(' : Movreel','').replace(' : BillionUploads','').replace(' : Putlocker','').replace(' : Sockshare','').replace(' : Nowvideo','').replace(' : 180upload','').replace(' : Filenuke','').replace(' : Flashx','').replace(' : Novamov','').replace(' : Uploadc','').replace(' : Xvidstage','').replace(' : Zooupload','').replace(' : Zalaa','').replace(' : Vidxden','').replace(' : Vidbux','')
@@ -1018,7 +1111,7 @@ def Download_SourceB(name,url):#starplay/noobroom
 
     stream_url= Noobroom(url)
     name=name.split(' [')[0]
-    name=name.replace('/','').replace('.','')
+    name=name.replace('/','').replace('.','').replace(':','')
 
     if stream_url:
             xbmc.executebuiltin("XBMC.Notification(Please Wait!,Resolving Link,2000)")
@@ -1904,7 +1997,7 @@ def addDown2(name,url,mode,iconimage,fan):
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz)
         return ok
 
-def addDown3(name,url,mode,iconimage,fanart):#starplay only
+def addDown3(name,url,mode,iconimage,fanart,id=False):#starplay only
         contextMenuItems = []
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)
         ok=True
@@ -1918,9 +2011,9 @@ def addDown3(name,url,mode,iconimage,fanart):#starplay only
                     watched_mark = 'Mark as Watched'
                 else:
                     watched_mark = 'Mark as Unwatched'
-                xbmcplugin.addSortMethod( handle=int( sys.argv[ 1 ] ), sortMethod=xbmcplugin.SORT_METHOD_UNSORTED )
-                xbmcplugin.addSortMethod( handle=int( sys.argv[ 1 ] ), sortMethod=xbmcplugin.SORT_METHOD_LABEL )
-                xbmcplugin.addSortMethod( handle=int( sys.argv[ 1 ] ), sortMethod=xbmcplugin.SORT_METHOD_DATE )
+                xbmcplugin.addSortMethod( handle=int( sys.argv[ 1 ] ), sortMethod=xbmcplugin.SORT_METHOD_PLAYLIST_ORDER )
+                xbmcplugin.addSortMethod( handle=int( sys.argv[ 1 ] ), sortMethod=xbmcplugin.SORT_METHOD_VIDEO_YEAR )
+                xbmcplugin.addSortMethod( handle=int( sys.argv[ 1 ] ), sortMethod=xbmcplugin.SORT_METHOD_VIDEO_TITLE )
                 xbmcplugin.addSortMethod( handle=int( sys.argv[ 1 ] ), sortMethod=xbmcplugin.SORT_METHOD_VIDEO_RATING )
                 xbmcplugin.addSortMethod( handle=int( sys.argv[ 1 ] ), sortMethod=xbmcplugin.SORT_METHOD_GENRE )
                 
@@ -1955,6 +2048,8 @@ def addDown3(name,url,mode,iconimage,fanart):#starplay only
                 Commands.append(('Refresh Metadata', 'XBMC.RunPlugin(%s?mode=778&name=%s&url=%s&iconimage=%s)' % (sys.argv[0], cname, video_type,imdb)))
         liz=xbmcgui.ListItem(name, iconImage=art+'/vidicon.png', thumbnailImage=infoLabels['cover_url'])
         liz.addContextMenuItems( Commands, replaceItems=True )
+        if(id != False):
+        	infoLabels["count"] = id
         liz.setInfo( type="Video", infoLabels = infoLabels)
         liz.setProperty('fanart_image', infoLabels['backdrop_url'])
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz)

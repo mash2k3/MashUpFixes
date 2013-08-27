@@ -36,7 +36,6 @@ def LISTSP5(murl):
         r = re.findall('Membership by invitation only', link)
         if r:
                 xbmc.executebuiltin("XBMC.Notification(Sorry!,Email or Password Incorrect,10000,"+smalllogo+")")        
-        main.addLink("[COLOR red]For Download Options, Bring up Context Menu Over Selected Link.[/COLOR]",'',art+'/link.png')
         match=re.compile("<br>(.+?) - <a[^>]+?href='(.+?)'>(.+?)</a>").findall(link)
         dialogWait = xbmcgui.DialogProgress()
         ret = dialogWait.create('Please wait until Movie list is cached.')
@@ -44,13 +43,14 @@ def LISTSP5(murl):
         loadedLinks = 0
         remaining_display = 'Movies loaded :: [B]'+str(loadedLinks)+' / '+str(totalLinks)+'[/B].'
         dialogWait.update(0, '[B]Will load instantly from now on[/B]',remaining_display)
+        id = totalLinks;
         for year,url,name in match:
-                name=name.replace(':','')
                 name=main.unescapes(name)
                 if(year=='0'):
                         year='0000'  
                 url=nrDomain+url
-                main.addDown3(name+' [COLOR red]('+year+')[/COLOR]',url,58,'','')
+                main.addDown3(name+' [COLOR red]('+year+')[/COLOR]',url,58,'','',id)
+                id -= 1
                 loadedLinks = loadedLinks + 1
                 percent = (loadedLinks * 100)/totalLinks
                 remaining_display = 'Movies loaded :: [B]'+str(loadedLinks)+' / '+str(totalLinks)+'[/B].'
