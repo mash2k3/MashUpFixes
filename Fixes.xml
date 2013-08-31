@@ -17,6 +17,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>Disney JR[COLOR red] Date: 8/31/2013[/COLOR]</name>
+<filename>disneyjr.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>kids</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
 <name>Billionuploads[COLOR red] Date: 8/27/2013 Courtesy of the one from the Hub[/COLOR]</name>
 <filename>billionuploads.py</filename>
 <location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
