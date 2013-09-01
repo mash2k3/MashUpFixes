@@ -17,6 +17,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>VeeHD[COLOR red] Date: 9/01/2013 By JasonPC from the Hub[/COLOR]</name>
+<filename>veehd.py</filename>
+<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
+<path>plugins</path>
+<thumbnail>urlresolver</thumbnail>
+</item>
+
+<item>
 <name>Disney JR[COLOR red] Date: 8/31/2013[/COLOR]</name>
 <filename>disneyjr.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
