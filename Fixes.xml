@@ -17,11 +17,11 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
-<name>VeeHD[COLOR red] Date: 9/01/2013 By JasonPC from the Hub[/COLOR]</name>
-<filename>veehd.py</filename>
-<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
-<path>plugins</path>
-<thumbnail>urlresolver</thumbnail>
+<name>Main Script V9[COLOR red] Date: 9/01/2013 VeeHD fix By JasonPC from the Hub[/COLOR]</name>
+<filename>main.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/</location>
+<path>libs</path>
+<thumbnail>plugins</thumbnail>
 </item>
 
 <item>
@@ -40,13 +40,7 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 <thumbnail>urlresolver</thumbnail>
 </item>
 
-<item>
-<name>Main Script V9[COLOR red] Date: 8/27/2013 Courtesy of the one from the Hub[/COLOR]</name>
-<filename>main.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/</location>
-<path>libs</path>
-<thumbnail>plugins</thumbnail>
-</item>
+
 
 <item>
 <name>Noobroom[COLOR red] Date: 8/26/2013[/COLOR]</name>

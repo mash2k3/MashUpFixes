@@ -1,4 +1,4 @@
-﻿def resolve_veehd(url):
+def resolve_veehd(url):
         name = "veeHD"
         cookie_file = os.path.join(datapath, '%s.cookies' % name)
         user_agent='Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'

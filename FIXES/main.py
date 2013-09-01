@@ -639,13 +639,15 @@ def resolve_veehd(url):
         name = "veeHD"
         cookie_file = os.path.join(datapath, '%s.cookies' % name)
         user_agent='Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
+        from random import choice
+        userName = ['mashup1', 'mashup3', 'mashup4', 'mashup5', 'mashup6', 'mashup7']
         try:
             loginurl = 'http://veehd.com/login'
             ref = 'http://veehd.com/'
             submit = 'Login'        
             terms = 'on'
             remember_me = 'on'
-            data = {'ref': ref, 'uname': '', 'pword': '', 'submit': submit, 'terms': terms, 'remember_me': remember_me}
+            data = {'ref': ref, 'uname': choice(userName), 'pword': 'xbmcisk00l', 'submit': submit, 'terms': terms, 'remember_me': remember_me}
             html = net(user_agent).http_POST(loginurl, data).content
             net().save_cookies(cookie_file)
             headers = {}
