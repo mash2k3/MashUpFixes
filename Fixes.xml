@@ -17,6 +17,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>iLive[COLOR red] Date: 9/02/2013[/COLOR]</name>
+<filename>ilive.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>live</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
 <name>Main Script V9[COLOR red] Date: 9/01/2013 VeeHD fix By JasonPC from the Hub[/COLOR]</name>
 <filename>main.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/</location>
