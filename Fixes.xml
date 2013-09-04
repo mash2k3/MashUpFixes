@@ -17,6 +17,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>Livestation[COLOR red] Date: 9/04/2013[/COLOR]</name>
+<filename>livestation.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>live</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
 <name>Rlsmix[COLOR red] Date: 9/03/2013[/COLOR]</name>
 <filename>rlsmix.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
