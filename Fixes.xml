@@ -126,7 +126,7 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 <item>
-<name>test only</name>
+<name>test only[COLOR red] Date: 7/19/2013[/COLOR]</name>
 <filename>default.py</filename>
 <location>special://home/addons/</location>
 <path>plugin.video.movie25</path>
