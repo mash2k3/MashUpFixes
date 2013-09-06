@@ -4,20 +4,52 @@ MashUp SubDir= adventure, documentaries, international, kids, live, movies_tv, p
 UrlResolver Dir = special://home/addons/script.module.urlresolver/lib/urlresolver/
 ############################################################################################################################
 year/month/day
-<date>2013/08/15</date>
+<date>2013/09/02</date>
 ##################################################################################################################################
 thumbnails= plugins,urlresolver
 ######################################################################################################################################
 <item>
-<name>Billionuploads[COLOR red] Date: 8/27/2013[/COLOR]</name>
-<filename>billionuploads.py</filename>
-<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
-<path>plugins</path>
-<thumbnail>urlresolver</thumbnail>
+<name>Default[COLOR red] Date: 7/19/2013[/COLOR]</name>
+<filename>default.py</filename>
+<location>special://home/addons/</location>
+<path>plugin.video.movie25</path>
+<thumbnail>plugins</thumbnail>
 </item>
 
 <item>
-<name>Main Script V9[COLOR red] Date: 8/27/2013[/COLOR]</name>
+<name>Movie25[COLOR red] Date: 9/06/2013[/COLOR]</name>
+<filename>movie25.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/</location>
+<path>libs</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
+<name>Livestation[COLOR red] Date: 9/04/2013[/COLOR]</name>
+<filename>livestation.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>live</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
+<name>Rlsmix[COLOR red] Date: 9/03/2013[/COLOR]</name>
+<filename>rlsmix.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>movies_tv</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
+<name>iLive[COLOR red] Date: 9/02/2013[/COLOR]</name>
+<filename>ilive.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>live</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
+<name>Main Script V10[COLOR red] Date: 9/01/2013 VeeHD fix By JasonPC from the Hub[/COLOR]</name>
 <filename>main.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/</location>
 <path>libs</path>
@@ -25,27 +57,11 @@ thumbnails= plugins,urlresolver
 </item>
 
 <item>
-<name>Noobroom[COLOR red] Date: 8/26/2013[/COLOR]</name>
-<filename>starplay.py</filename>
+<name>Disney JR[COLOR red] Date: 8/31/2013[/COLOR]</name>
+<filename>disneyjr.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
-<path>movies_tv</path>
+<path>kids</path>
 <thumbnail>plugins</thumbnail>
-</item>
-
-<item>
-<name>VIPlaylist[COLOR red] Date: 8/26/2013[/COLOR]</name>
-<filename>movieplaylist.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
-<path>movies_tv</path>
-<thumbnail>plugins</thumbnail>
-</item>
-
-<item>
-<name>VidHog[COLOR red] Date: 8/26/2013[/COLOR]</name>
-<filename>vidhog.py</filename>
-<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
-<path>plugins</path>
-<thumbnail>urlresolver</thumbnail>
 </item>
 
 ##################################################################################################################################

@@ -17,6 +17,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>Movie25[COLOR red] Date: 9/06/2013[/COLOR]</name>
+<filename>movie25.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/</location>
+<path>libs</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
 <name>Livestation[COLOR red] Date: 9/04/2013[/COLOR]</name>
 <filename>livestation.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
@@ -125,10 +133,3 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 <thumbnail>urlresolver</thumbnail>
 </item>
 
-<item>
-<name>test only[COLOR red] Date: 7/19/2013[/COLOR]</name>
-<filename>default.py</filename>
-<location>special://home/addons/</location>
-<path>plugin.video.movie25</path>
-<thumbnail>plugins</thumbnail>
-</item>
