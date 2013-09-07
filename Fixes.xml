@@ -17,12 +17,13 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
-<name>Movie25[COLOR red] Date: 9/06/2013[/COLOR]</name>
+<name>Movie25 V2[COLOR red] Date: 9/07/2013[/COLOR]</name>
 <filename>movie25.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/</location>
 <path>libs</path>
 <thumbnail>plugins</thumbnail>
 </item>
+
 
 <item>
 <name>Livestation[COLOR red] Date: 9/04/2013[/COLOR]</name>
