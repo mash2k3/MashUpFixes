@@ -966,6 +966,34 @@ def resolve_videto(url):
                                5000, error_logo)
         return
 
+def resolve_mightyupload(url):
+    error_logo = art+'/bigx.png'
+    from resources.libs import jsunpack
+    try:
+        html = net().http_GET(url).content
+        addon.log_error('Mash Up: Resolve MightyUpload - Requesting GET URL: '+url)
+        r = re.findall(r'\"hidden\" name=\"?(.+?)\" value=\"?(.+?)\"', html, re.I)
+        post_data = {}
+        for name, value in r:
+            post_data[name] = value
+        post_data['referer'] = url
+        html = net().http_POST(url, post_data).content
+        r = re.findall(r'id=\'flvplayer\'\>\<\/span\>.+?javascript\'\>(eval\(function\(p\,a\,c\,k\,e\,d\).+?)\<\/script\>', html, re.DOTALL)
+        if r:
+            unpacked = jsunpack.unpack(r[0])
+            unpacked=unpacked.replace('\\','')
+            x = re.findall("'file','(.+?)'",unpacked)
+        else:
+            addon.log_error('Mash Up: Resolve MightyUpload - File Was Removed')
+            addon.show_small_popup('[B][COLOR green]Mash Up: MightyUpload Resolver[/COLOR][/B]','No Such File Or The File Has Been Removed',
+                                   5000, error_logo)
+        return x[0]
+    except Exception, e:
+        print 'Mash Up: Resolve MightyUpload Error - '+str(e)
+        addon.show_small_popup('[B][COLOR green]Mash Up: MightyUpload Resolver[/COLOR][/B]','Error, Check XBMC.log for Details',
+                               5000, error_logo)
+        return
+
 def resolve_epicshare(url):
 
     try:

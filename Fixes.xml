@@ -17,6 +17,22 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>Main Script V11[COLOR red] Date: 9/07/2013 added MightyUpload resolver[/COLOR]</name>
+<filename>main.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/</location>
+<path>libs</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
+<name>VIPlaylist V2[COLOR red] Date: 9/07/2013 added MightyUpload resolver support/COLOR]</name>
+<filename>movieplaylist.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>movies_tv</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
 <name>Movie25 V2[COLOR red] Date: 9/07/2013[/COLOR]</name>
 <filename>movie25.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/</location>
@@ -50,14 +66,6 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 <item>
-<name>Main Script V9[COLOR red] Date: 9/01/2013 VeeHD fix By JasonPC from the Hub[/COLOR]</name>
-<filename>main.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/</location>
-<path>libs</path>
-<thumbnail>plugins</thumbnail>
-</item>
-
-<item>
 <name>Disney JR[COLOR red] Date: 8/31/2013[/COLOR]</name>
 <filename>disneyjr.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
@@ -78,14 +86,6 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 <item>
 <name>Noobroom[COLOR red] Date: 8/26/2013[/COLOR]</name>
 <filename>starplay.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
-<path>movies_tv</path>
-<thumbnail>plugins</thumbnail>
-</item>
-
-<item>
-<name>VIPlaylist[COLOR red] Date: 8/26/2013[/COLOR]</name>
-<filename>movieplaylist.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
 <path>movies_tv</path>
 <thumbnail>plugins</thumbnail>

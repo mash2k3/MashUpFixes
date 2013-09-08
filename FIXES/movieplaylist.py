@@ -191,7 +191,19 @@ def MLink(mname,murl,thumb):
                                     stream_url = source.resolve()
                                 else:
                                     stream_url = False
-                                    return                    
+                                    return
+            elif re.findall('mightyupload',murl,re.I):
+                    try:
+                            stream_url =main.resolve_mightyupload(murl)
+                    except:
+                        if hosted_media:
+                                source = hosted_media
+                                if source:
+                                    xbmc.executebuiltin("XBMC.Notification(Please Wait!,Resolving Link,5000)")
+                                    stream_url = source.resolve()
+                                else:
+                                    stream_url = False
+                                    return
             else:
                     if hosted_media:
                         source = hosted_media
