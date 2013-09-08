@@ -25,7 +25,7 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 <item>
-<name>VIPlaylist V2[COLOR red] Date: 9/07/2013 added MightyUpload resolver support/COLOR]</name>
+<name>VIPlaylist V2[COLOR red] Date: 9/07/2013 added MightyUpload resolver support[/COLOR]</name>
 <filename>movieplaylist.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
 <path>movies_tv</path>
