@@ -970,9 +970,9 @@ def resolve_mightyupload(url):
     error_logo = art+'/bigx.png'
     from resources.libs import jsunpack
     try:
-        html = net().http_GET(url).content
+        html1 = net().http_GET(url).content
         addon.log_error('Mash Up: Resolve MightyUpload - Requesting GET URL: '+url)
-        r = re.findall(r'\"hidden\" name=\"?(.+?)\" value=\"?(.+?)\"', html, re.I)
+        r = re.findall(r'\"hidden\" name=\"?(.+?)\" value=\"?(.+?)\"', html1, re.I)
         post_data = {}
         for name, value in r:
             post_data[name] = value
@@ -984,8 +984,17 @@ def resolve_mightyupload(url):
             unpacked=unpacked.replace('\\','')
             x = re.findall("'file','(.+?)'",unpacked)
         else:
-            addon.log_error('Mash Up: Resolve MightyUpload - File Was Removed')
-            addon.show_small_popup('[B][COLOR green]Mash Up: MightyUpload Resolver[/COLOR][/B]','No Such File Or The File Has Been Removed',
+            
+            link = re.findall(r'<IFRAME SRC="(.+?)".+?></IFRAME>', html1, re.I)[0]
+            html = net().http_POST(link, post_data).content
+            r = re.findall(r'''id=\"player_code"><script type='.+?javascript\'\>(eval\(function\(p\,a\,c\,k\,e\,d\).+?)\<\/script\>''', html, re.DOTALL)
+            if r:
+                unpacked = jsunpack.unpack(r[0])
+                unpacked=unpacked.replace('\\','')
+                x = re.findall('<embed id="np_vid"type="video/divx"src="(.+?)"',unpacked)
+            else:
+                addon.log_error('Mash Up: Resolve MightyUpload - File Was Removed')
+                addon.show_small_popup('[B][COLOR green]Mash Up: MightyUpload Resolver[/COLOR][/B]','No Such File Or The File Has Been Removed',
                                    5000, error_logo)
         return x[0]
     except Exception, e:
