@@ -17,6 +17,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>iLive[COLOR red] Date: 9/12/2013[/COLOR] Added Token</name>
+<filename>ilive.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>live</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
 <name>Main Script V11[COLOR red] Date: 9/10/2013[/COLOR][COLOR yellow] Billionuploads requirement[/COLOR]</name>
 <filename>main.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/</location>
@@ -79,14 +87,6 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 <filename>rlsmix.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
 <path>movies_tv</path>
-<thumbnail>plugins</thumbnail>
-</item>
-
-<item>
-<name>iLive[COLOR red] Date: 9/02/2013[/COLOR]</name>
-<filename>ilive.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
-<path>live</path>
 <thumbnail>plugins</thumbnail>
 </item>
 
