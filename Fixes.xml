@@ -17,6 +17,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>Disney JR[COLOR red] Date: 09/17/2013[/COLOR]</name>
+<filename>disneyjr.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>kids</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
 <name>Arabic Streams[COLOR red] Date: 9/15/2013[/COLOR]</name>
 <filename>hadynz.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
