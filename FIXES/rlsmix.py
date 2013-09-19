@@ -64,11 +64,8 @@ def LISTTV4(durl):
 def LINKTV4(mname,url):
         ok=True
         main.addLink("[COLOR red]For Download Options, Bring up Context Menu Over Selected Link.[/COLOR]",'','')
-        match=re.compile('"(.+?)"').findall(url)
-        for url in match:
-                hname=re.compile("http.+?//(.+?)/.+?").findall(url)
-                for host in hname:
-                        host=host.replace('www.','').replace('.com','').replace('.es','').replace('.ws','').replace('.it','').replace('.net','').replace('.org','').replace('.info','')
+        match=re.compile('{"url":"(.+?)","hostname":"(.+?)"}').findall(url)
+        for url,host in match:
                 thumb=host.lower()
                 match2=re.compile('rar').findall(url)
                 if len(match2)==0:
@@ -97,6 +94,52 @@ def LINKTV4B(mname,murl):
                         stream_url = source.resolve()
                 else:
                       stream_url = False
+                
+                infoL={'Title': infoLabels['title'], 'Plot': infoLabels['plot'], 'Genre': infoLabels['genre']}
+                # play with bookmark
+                player = playbackengine.PlayWithoutQueueSupport(resolved_url=stream_url, addon_id=addon_id, video_type=video_type, title=infoLabels['title'],season=str(season), episode=(episode), year=str(infoLabels['year']),img=img,infolabels=infoL, watchedCallbackwithParams=main.WatchedCallbackwithParams,imdb_id=imdb_id)
+                #WatchHistory
+                if selfAddon.getSetting("whistory") == "true":
+                    wh.add_item(mname+' '+'[COLOR green]Rlsmix[/COLOR]', sys.argv[0]+sys.argv[2], infolabels=infolabels, img=img, fanart=fanart, is_folder=False)
+                player.KeepAlive()
+                return ok
+        except Exception, e:
+                if stream_url != False:
+                        main.ErrorReport(e)
+                return ok
+
+       
+
+def SearchhistoryRlsmix():
+        seapath=os.path.join(main.datapath,'Search')
+        SeaFile=os.path.join(seapath,'SearchHistoryTv')
+        if not os.path.exists(SeaFile):
+            url='rlsmix'
+            SEARCHRlsmix(url)
+        else:
+            main.addDir('Search','rlsmix',137,art+'/search.png')
+            main.addDir('Clear History',SeaFile,128,art+'/cleahis.png')
+            thumb=art+'/link.png'
+            searchis=re.compile('search="(.+?)",').findall(open(SeaFile,'r').read())
+            for seahis in reversed(searchis):
+                    url=seahis
+                    seahis=seahis.replace('%20',' ')
+                    main.addDir(seahis,url,137,thumb)
+        
+def LINKTV4B(mname,murl):
+        main.GA("RlsmixTV","Watched")
+        ok=True
+        infoLabels =main.GETMETAEpiT(mname,'','')
+        video_type='episode'
+        season=infoLabels['season']
+        episode=infoLabels['episode']
+        img=infoLabels['cover_url']
+        fanart =infoLabels['backdrop_url']
+        imdb_id=infoLabels['imdb_id']
+        infolabels = { 'supports_meta' : 'true', 'video_type':video_type, 'name':str(infoLabels['title']), 'imdb_id':str(infoLabels['imdb_id']), 'season':str(season), 'episode':str(episode), 'year':str(infoLabels['year']) }
+        try:
+                xbmc.executebuiltin("XBMC.Notification(Please Wait!,Resolving Link,3000)")
+                stream_url = main.resolve_url(murl)
                 
                 infoL={'Title': infoLabels['title'], 'Plot': infoLabels['plot'], 'Genre': infoLabels['genre']}
                 # play with bookmark
@@ -189,3 +232,4 @@ def SEARCHRlsmix(murl):
         dialogWait.close()
         del dialogWait
         main.GA("Movie1k","Search")
+

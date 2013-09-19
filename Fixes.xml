@@ -17,6 +17,15 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>Rlsmix V3[COLOR red] Date: 9/19/2013[/COLOR]</name>
+<filename>rlsmix.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
+<path>movies_tv</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+
+<item>
 <name>Disney JR[COLOR red] Date: 09/17/2013[/COLOR]</name>
 <filename>disneyjr.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
@@ -62,14 +71,6 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 <filename>settings.xml</filename>
 <location>special://home/addons/plugin.video.movie25/</location>
 <path>resources</path>
-<thumbnail>plugins</thumbnail>
-</item>
-
-<item>
-<name>Rlsmix V2[COLOR red] Date: 9/09/2013[/COLOR]</name>
-<filename>rlsmix.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
-<path>movies_tv</path>
 <thumbnail>plugins</thumbnail>
 </item>
 
