@@ -17,6 +17,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>Main Script V12[COLOR red] Date: 9/26/2013[/COLOR][COLOR yellow] FIXES MIGHTYUPLOAD[/COLOR]</name>
+<filename>main.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/</location>
+<path>libs</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
 <name>Rlsmix V3[COLOR red] Date: 9/19/2013[/COLOR]</name>
 <filename>rlsmix.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/libs/</location>
@@ -50,13 +58,7 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 <thumbnail>plugins</thumbnail>
 </item>
 
-<item>
-<name>Main Script V11[COLOR red] Date: 9/10/2013[/COLOR][COLOR yellow] Billionuploads requirement[/COLOR]</name>
-<filename>main.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/</location>
-<path>libs</path>
-<thumbnail>plugins</thumbnail>
-</item>
+
 
 <item>
 <name>Billionuploads[COLOR red] Date: 9/10/2013 Courtesy of the one from the Hub[/COLOR]</name>
