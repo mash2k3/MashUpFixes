@@ -25,7 +25,7 @@ if selfAddon.getSetting('visitor_ga')=='':
     from random import randint
     selfAddon.setSetting('visitor_ga',str(randint(0, 0x7fffffff)))
 
-VERSION = "1.3.7"
+VERSION = "1.3.7b"
 PATH = "MashUp-"            
 UATRACK="UA-38312513-1" 
 
@@ -831,7 +831,7 @@ def resolve_billionuploads(url):
                 dialog.update(50)
             
             data.update({'submit_btn':''})
-            data.update({'geekref':'yeahman'})
+            data.update({'please':'yeahman'}) 
             
             print 'Mash Up BillionUploads - Requesting POST URL: %s' % url
             html = normal.open(url, urllib.urlencode(data)).read()

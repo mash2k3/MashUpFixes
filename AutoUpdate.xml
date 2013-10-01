@@ -4,7 +4,7 @@ MashUp SubDir= adventure, documentaries, international, kids, live, movies_tv, p
 UrlResolver Dir = special://home/addons/script.module.urlresolver/lib/urlresolver/
 ############################################################################################################################
 year/month/day
-<date>2013/09/29</date>
+<date>2013/09/30</date>
 ##################################################################################################################################
 thumbnails= plugins,urlresolver
 ######################################################################################################################################
@@ -18,7 +18,13 @@ thumbnails= plugins,urlresolver
 <thumbnail>plugins</thumbnail>
 </item>
 
-
+<item>
+<name>Main Script V13[COLOR red] Date: 9/26/2013[/COLOR][COLOR yellow] FIXES Billionsupload[/COLOR]</name>
+<filename>main.py</filename>
+<location>special://home/addons/plugin.video.movie25/resources/</location>
+<path>libs</path>
+<thumbnail>plugins</thumbnail>
+</item>
 
 ##################################################################################################################################
 
