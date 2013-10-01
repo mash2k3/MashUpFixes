@@ -4,50 +4,21 @@ MashUp SubDir= adventure, documentaries, international, kids, live, movies_tv, p
 UrlResolver Dir = special://home/addons/script.module.urlresolver/lib/urlresolver/
 ############################################################################################################################
 year/month/day
-<date>2013/09/04</date>
+<date>2013/09/28</date>
 ##################################################################################################################################
 thumbnails= plugins,urlresolver
 ######################################################################################################################################
-<item>
-<name>Main Script V11[COLOR red] Date: 9/10/2013[/COLOR][COLOR yellow] Billionuploads requirement[/COLOR]</name>
-<filename>main.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/</location>
-<path>libs</path>
-<thumbnail>plugins</thumbnail>
-</item>
+
 
 <item>
-<name>Billionuploads[COLOR red] Date: 9/10/2013 Courtesy of the one from the Hub[/COLOR]</name>
+<name>Default script</name>
 <filename>billionuploads.py</filename>
-<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
-<path>plugins</path>
-<thumbnail>urlresolver</thumbnail>
-</item>
-
-<item>
-<name>Requirement for Rlsmix V2[COLOR red] Date: 9/09/2013[/COLOR]</name>
-<filename>settings.xml</filename>
-<location>special://home/addons/plugin.video.movie25/</location>
-<path>resources</path>
-<thumbnail>plugins</thumbnail>
-</item>
-
-<item>
-<name>Rlsmix V2[COLOR red] Date: 9/09/2013[/COLOR]</name>
-<filename>rlsmix.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
-<path>movies_tv</path>
+<location>special://home/addons/</location>
+<path>plugin.video.movie25</path>
 <thumbnail>plugins</thumbnail>
 </item>
 
 
-<item>
-<name>VIPlaylist V2[COLOR red] Date: 9/07/2013 added MightyUpload resolver support[/COLOR]</name>
-<filename>movieplaylist.py</filename>
-<location>special://home/addons/plugin.video.movie25/resources/libs/</location>
-<path>movies_tv</path>
-<thumbnail>plugins</thumbnail>
-</item>
 
 ##################################################################################################################################
 
