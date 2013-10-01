@@ -4,7 +4,7 @@ MashUp SubDir= adventure, documentaries, international, kids, live, movies_tv, p
 UrlResolver Dir = special://home/addons/script.module.urlresolver/lib/urlresolver/
 ############################################################################################################################
 year/month/day
-<date>2013/09/28</date>
+<date>2013/09/29</date>
 ##################################################################################################################################
 thumbnails= plugins,urlresolver
 ######################################################################################################################################
@@ -12,7 +12,7 @@ thumbnails= plugins,urlresolver
 
 <item>
 <name>Default script</name>
-<filename>billionuploads.py</filename>
+<filename>default.py</filename>
 <location>special://home/addons/</location>
 <path>plugin.video.movie25</path>
 <thumbnail>plugins</thumbnail>
