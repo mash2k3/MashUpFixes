@@ -17,6 +17,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>Billionuploads[COLOR red] Date: 10/3/2013 Courtesy of the one from XBMCTALK[/COLOR]</name>
+<filename>billionuploads.py</filename>
+<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
+<path>plugins</path>
+<thumbnail>urlresolver</thumbnail>
+</item>
+
+<item>
 <name>Main Script V13[COLOR red] Date: 9/30/2013[/COLOR][COLOR yellow] FIXES BILLIONSUPLOAD[/COLOR]</name>
 <filename>main.py</filename>
 <location>special://home/addons/plugin.video.movie25/resources/</location>
@@ -59,14 +67,6 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 
-
-<item>
-<name>Billionuploads[COLOR red] Date: 9/10/2013 Courtesy of the one from the Hub[/COLOR]</name>
-<filename>billionuploads.py</filename>
-<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
-<path>plugins</path>
-<thumbnail>urlresolver</thumbnail>
-</item>
 
 <item>
 <name>Requirement for Rlsmix V2[COLOR red] Date: 9/09/2013[/COLOR]</name>
