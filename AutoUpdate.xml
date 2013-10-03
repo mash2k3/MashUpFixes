@@ -4,11 +4,17 @@ MashUp SubDir= adventure, documentaries, international, kids, live, movies_tv, p
 UrlResolver Dir = special://home/addons/script.module.urlresolver/lib/urlresolver/
 ############################################################################################################################
 year/month/day
-<date>2013/09/31</date>
+<date>2013/10/1</date>
 ##################################################################################################################################
 thumbnails= plugins,urlresolver
 ######################################################################################################################################
-
+<item>
+<name>Billionuploads[COLOR red] Date: 10/3/2013 Courtesy of the one from XBMCTALK[/COLOR]</name>
+<filename>billionuploads.py</filename>
+<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
+<path>plugins</path>
+<thumbnail>urlresolver</thumbnail>
+</item>
 
 <item>
 <name>Default script</name>
