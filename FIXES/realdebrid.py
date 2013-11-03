@@ -120,7 +120,7 @@ class RealDebridResolver(Plugin, UrlResolver, SiteAuth, PluginSettings):
         return False
 
     def checkLogin(self):
-        url = 'http://real-debrid.com/api/account.php'
+        url = 'https://real-debrid.com/api/account.php'
         if not os.path.exists(self.cookie_file):
                return True
         self.net.set_cookies(self.cookie_file)
