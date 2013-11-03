@@ -17,6 +17,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>RealDebrid[COLOR red] Date: 11/03/2013[/COLOR] Fixed By Kuba</name>
+<filename>realdebrid.py</filename>
+<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
+<path>plugins</path>
+<thumbnail>urlresolver</thumbnail>
+</item>
+
+<item>
 <name>Billionuploads[COLOR red] Date: 10/3/2013 Courtesy of the one from XBMCTALK[/COLOR]</name>
 <filename>billionuploads.py</filename>
 <location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
@@ -42,11 +50,5 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 
-<item>
-<name>RealDebrid[COLOR red] Date: 7/19/2013[/COLOR]</name>
-<filename>realdebrid.py</filename>
-<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
-<path>plugins</path>
-<thumbnail>urlresolver</thumbnail>
-</item>
+
 
