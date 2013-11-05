@@ -17,6 +17,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>Fixes urlresolver issue[COLOR red] Date: 11/5/2013 by kuba[/COLOR]</name>
+<filename>vidxden.py</filename>
+<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
+<path>plugins</path>
+<thumbnail>urlresolver</thumbnail>
+</item>
+
+<item>
 <name>RealDebrid[COLOR red] Date: 11/03/2013[/COLOR] Fixed By Kuba</name>
 <filename>realdebrid.py</filename>
 <location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
