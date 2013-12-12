@@ -17,6 +17,14 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 ##################################################################################################################################
 <item>
+<name>Advancedsettings fix for video kick out[COLOR red] Date: 12/11/2013 by Hackermil[/COLOR]</name>
+<filename>advancedsettings.xml</filename>
+<location>special://home/</location>
+<path>userdata</path>
+<thumbnail>plugins</thumbnail>
+</item>
+
+<item>
 <name>Fixes urlresolver issue[COLOR red] Date: 11/5/2013 by kuba[/COLOR]</name>
 <filename>vidxden.py</filename>
 <location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
