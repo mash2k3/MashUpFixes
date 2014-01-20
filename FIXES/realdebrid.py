@@ -98,9 +98,11 @@ class RealDebridResolver(Plugin, UrlResolver, SiteAuth, PluginSettings):
     def get_all_hosters(self):
         if self.hosters is None:
             try :
-                url = 'http://www.real-debrid.com/api/regex.php?type=all'
-                response = self.net.http_GET(url).content.lstrip('/').rstrip('/g')
-                delim = '/g,/|/g\|-\|/'
+#                 url = 'http://www.real-debrid.com/api/regex.php?type=all'
+                url = 'http://real-debrid.com/api/hosters.php'
+                response = self.net.http_GET(url).content.lstrip('/').rstrip('/g').replace('"', '')
+#                 delim = '/g,/|/g\|-\|/'
+                delim = ','
                 self.hosters = [re.compile(host) for host in re.split(delim, response)]
             except:
                 self.hosters = []
