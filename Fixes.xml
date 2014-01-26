@@ -25,7 +25,7 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 <item>
-<name>RealDebrid[COLOR red] Date: 01/22/2014[/COLOR] Fixed By Kuba</name>
+<name>RealDebrid (Fixes Lumfile) [COLOR red]Date: 01/26/2014[/COLOR] Fixed By Kuba</name>
 <filename>realdebrid.py</filename>
 <location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
 <path>plugins</path>
