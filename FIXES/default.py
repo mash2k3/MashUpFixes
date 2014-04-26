@@ -126,7 +126,6 @@ def MAIN():
                 main.addDirHome("Trakt Show Tracker",'Mash Up',429,art+'/trakt.png')
     main.addPlayc('Need Help?','http://www.movie25.com/',100,art+'/help.png','','','','','')
     main.addPlayc('Upload Log','http://www.movie25.so/',156,art+'/loguploader.png','','','','','')
-    main.addPlayc('Click Me!!!','https://raw.github.com/mash2k3/MashupArtwork/master/art/donation.png',244,art+'/paypalmash2.png','','','','','')
     main.addSpecial('@mashupxbmc','','',art+'/twittermash.png')
     main.addPlayc('MashUp Settings','http://www.movie25.so/',1999,art+'/MashSettings.png','','','','','')
               
@@ -583,7 +582,7 @@ def LiveStreams():
         else:
             thumbs=art+'/'+thumb+'.png'
         main.addDir(name,url,int(mode),thumbs)
-    main.addDir('Sky Access','na',409,art+'/skyaccess.png')
+    main.addDir('SportsAccess','na',409,art+'/sportsaccess.png')
     if selfAddon.getSetting("customchannel") == "true":
         main.addDir('My XML Channels','nills',238,art+'/xml.png')
     main.addDir('TubTub.com','http://tubtub.com/',185,art+'/tubtub.png')
@@ -859,18 +858,17 @@ def downloadFileWithDialog(url,dest):
 def UploadLog():
     from resources.fixes import addon
     addon.LogUploader()
-
-repopath = xbmc.translatePath(os.path.join('special://home/addons', 'repository.mash2k3'))
-try: 
-    if not os.path.exists(repopath):
-        url = 'https://bitbucket.org/mash2k3/mash2k3-repository/src/a3be11dd1482e4b08fcc3905b9150971117e7955/zips/repository.mash2k3/repository.mash2k3-1.5.zip?at=master'
+def GetRepo():
+    repopath = xbmc.translatePath(os.path.join('special://home/addons', 'repository.mash2k3'))
+    try:
+        url = 'http://repo.mashupxbmc.com/zips/repository.mash2k3/repository.mash2k3-1.7.zip'
         path = xbmc.translatePath(os.path.join('special://home/addons','packages'))
-        lib=os.path.join(path, 'repository.mash2k3-1.5.zip')
-        if main.downloadFile(url,lib):
+        lib=os.path.join(path, 'repository.mash2k3-1.7.zip')
+        if main.downloadFile(url,lib,silent = True):
             print lib
             addonfolder = xbmc.translatePath(os.path.join('special://home/addons',''))
-            xbmc.executebuiltin("XBMC.Extract(%s,%s)"%(lib,addonfolder))
-except: pass
+        xbmc.executebuiltin("XBMC.Extract(%s,%s)"%(lib,addonfolder))
+    except: pass
 
 repopath = xbmc.translatePath(os.path.join('special://home/addons', 'repository.divingmule.addons'))
 try: 
@@ -1277,6 +1275,8 @@ if mode and url:
 if mode==None or url==None or len(url)<1:
     if ENV is 'Prod':
         threading.Thread(target=CheckForAutoUpdate).start()
+        threading.Thread(target=GetRepo).start()
+        
     else:
         threading.Thread(target=CheckForAutoUpdateDev).start()
     threading.Thread(target=cacheSideReel).start()

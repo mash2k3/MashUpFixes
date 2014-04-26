@@ -19,10 +19,10 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 
 <item>
-<name>Advancedsettings fix for video kick out[COLOR red] Date: 12/11/2013 by Hackermil[/COLOR]</name>
-<filename>advancedsettings.xml</filename>
-<location>special://home/</location>
-<path>userdata</path>
+<name>[COLOR yellow]Source Website Down FIX (AutoUpdate FIX)[/COLOR][COLOR red] Date: 4/26/2014[/COLOR]</name>
+<filename>default.py</filename>
+<location>special://home/addons/</location>
+<path>plugin.video.movie25</path>
 <thumbnail>plugins</thumbnail>
 </item>
 
