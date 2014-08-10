@@ -27,7 +27,7 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 </item>
 
 <item>
-<name>[COLOR yellow]Failed Update FIX (AutoUpdate FIX)[/COLOR][COLOR aqua]Part 2[/COLOR] [COLOR orange]restart mash when done[/COLOR][/COLOR][COLOR red] Date:8/10/2014[/COLOR]</name>
+<name>[COLOR yellow]Failed Update FIX (AutoUpdate FIX)[/COLOR][COLOR aqua]Part 2[/COLOR] [COLOR orange]restart mash when done[/COLOR][COLOR red] Date:8/10/2014[/COLOR]</name>
 <filename>default.py</filename>
 <location>special://home/addons/</location>
 <path>plugin.video.movie25</path>
