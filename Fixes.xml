@@ -21,7 +21,7 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 <item>
 <name>[COLOR yellow]Failed Update FIX (AutoUpdate FIX)[/COLOR][COLOR aqua]Part 1 Run first[/COLOR][COLOR red] Date:8/10/2014[/COLOR]</name>
 <filename>changelog.py</filename>
-<location>special://home/addons/resources</location>
+<location>special://home/addons/plugin.video.movie25/resources/</location>
 <path>libs</path>
 <thumbnail>plugins</thumbnail>
 </item>
