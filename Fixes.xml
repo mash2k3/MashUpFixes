@@ -19,19 +19,19 @@ name>[COLOR red] Date: 7/19/2013[/COLOR]</name>
 
 
 <item>
-<name>[COLOR yellow]Source Website Down FIX (AutoUpdate FIX)[/COLOR][COLOR red] Date: 4/26/2014[/COLOR]</name>
-<filename>default.py</filename>
-<location>special://home/addons/</location>
-<path>plugin.video.movie25</path>
+<name>[COLOR yellow]Failed Update FIX (AutoUpdate FIX)[/COLOR][COLOR aqua]Part 1 Run first[/COLOR][COLOR red] Date:8/10/2014[/COLOR]</name>
+<filename>changelog.py</filename>
+<location>special://home/addons/resources</location>
+<path>libs</path>
 <thumbnail>plugins</thumbnail>
 </item>
 
 <item>
-<name>RealDebrid (Fixes Lumfile) [COLOR red]Date: 01/26/2014[/COLOR] Fixed By Kuba</name>
-<filename>realdebrid.py</filename>
-<location>special://home/addons/script.module.urlresolver/lib/urlresolver/</location>
-<path>plugins</path>
-<thumbnail>urlresolver</thumbnail>
+<name>[COLOR yellow]Failed Update FIX (AutoUpdate FIX)[/COLOR][COLOR aqua]Part 2[/COLOR][COLOR red] Date:8/10/2014[/COLOR]</name>
+<filename>default.py</filename>
+<location>special://home/addons/</location>
+<path>plugin.video.movie25</path>
+<thumbnail>plugins</thumbnail>
 </item>
 
 
