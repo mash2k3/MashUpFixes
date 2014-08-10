@@ -101,8 +101,6 @@ def MAIN():
             main.addDirHome('HackerMils Stash','https://raw.github.com/HackerMil/HackerMilsMovieStash/master/Directory/HackerMil_Directory.xml',235,art+'/hackermil.png')
         elif index==27:
             main.addDirHome('The New Pirate Bay','https://raw.github.com/mash2k3/MashUpTNPB/master/TNPB_Directory.xml',235,art+'/tnpb.png')
-        elif index==28:
-            main.addDirHome('MorePower','https://raw.github.com/mash2k3/MashUpMorePower/master/MorePower_Directory.xml',235,art+'/morepower.png')
         elif index==29:
             main.addDirHome('Staael 1982','https://raw.github.com/mash2k3/Staael1982/master/Staael_Directory.xml',235,art+'/staael2014.png')
         elif index==34:
@@ -122,7 +120,10 @@ def MAIN():
         elif index==36:
             if selfAddon.getSetting("stracker") == '0':
                 main.addDirHome("SideReel Show Tracker",'Mash Up',397,art+'/sidereel.png')
+            elif selfAddon.getSetting("stracker") == '1':
+                main.addDirHome("Trakt Show Tracker",'Mash Up',429,art+'/trakt.png')
             else:
+                main.addDirHome("SideReel Show Tracker",'Mash Up',397,art+'/sidereel.png')
                 main.addDirHome("Trakt Show Tracker",'Mash Up',429,art+'/trakt.png')
     main.addPlayc('Need Help?','http://www.movie25.com/',100,art+'/help.png','','','','','')
     main.addPlayc('Upload Log','http://www.movie25.so/',156,art+'/loguploader.png','','','','','')
@@ -133,7 +134,8 @@ def MAIN():
 def Announcements():
     #Announcement Notifier from xml file
     try:
-        link=main.OPENURL('https://raw.github.com/mash2k3/MashUpNotifications/master/Notifier.xml',verbose=False)
+        import time
+        link=main.OPENURL('https://raw.github.com/mash2k3/MashUpNotifications/master/Notifier.xml?'+ str(time.time()),verbose=False)
         link=link.replace('\r','').replace('\n','').replace('\t','').replace('&nbsp;','')
     except: link='nill'
     r = re.findall(r'ANNOUNCEMENTWINDOW ="ON"',link)
@@ -191,65 +193,153 @@ def Announcements():
                     os.remove(notified)
         else: print 'No Messages'
     else: print 'Github Link Down'
+    match=re.compile('<AutoSource>([^<]+)</AutoSource><UpdateOption>([^<]+)</UpdateOption>').findall(link)
+    if match:
+        for AutoSource,UpdateOption in match:
+            print AutoSource,UpdateOption
+            if AutoSource == 'github':
+                selfAddon.setSetting('autosource', 'false')
+                if UpdateOption == 'original':
+                    selfAddon.setSetting('updateoption', 'original')
+                if UpdateOption == 'gitupdate1':
+                    selfAddon.setSetting('updateoption', 'gitupdate1')
+                if UpdateOption == 'gitupdate2':
+                    selfAddon.setSetting('updateoption', 'gitupdate2')
+            else:
+                selfAddon.setSetting('autosource', 'true')
+        else: print 'No Messages'
+    else: print 'Github Link Down'
 
 def CheckForAutoUpdate(force = False):
-    GitHubRepo    = 'AutoUpdate'
-    GitHubUser    = 'mash2k3'
-    GitHubBranch  = 'master'
-    UpdateVerFile = 'update'
-    RunningFile   = 'running'
-    verCheck=True #main.CheckVersion()#Checks If Plugin Version is up to date
-    if verCheck == True:
-        from resources.libs import autoupdate
-        try:
-            print "Mashup auto update - started"
-            html=main.OPENURL('https://github.com/'+GitHubUser+'/'+GitHubRepo+'?files=1', mobile=True, verbose=False)
-        except: html=''
-        m = re.search("View (\d+) commit",html,re.I)
-        if m: gitver = int(m.group(1))
-        else: gitver = 0
-        UpdateVerPath = os.path.join(UpdatePath,UpdateVerFile)
-        try: locver = int(autoupdate.getUpdateFile(UpdateVerPath))
-        except: locver = 0
-        RunningFilePath = os.path.join(UpdatePath, RunningFile)
-        if locver < gitver and (not os.path.exists(RunningFilePath) or os.stat(RunningFilePath).st_mtime + 120 < time.time()) or force:
-            UpdateUrl = 'https://github.com/'+GitHubUser+'/'+GitHubRepo+'/archive/'+GitHubBranch+'.zip'
-            UpdateLocalName = GitHubRepo+'.zip'
-            UpdateDirName   = GitHubRepo+'-'+GitHubBranch
-            UpdateLocalFile = xbmc.translatePath(os.path.join(UpdatePath, UpdateLocalName))
-            main.setFile(RunningFilePath,'')
-            print "auto update - new update available ("+str(gitver)+")"
-            xbmc.executebuiltin("XBMC.Notification(MashUp Update,New Update detected,3000,"+main.slogo+")")
-            xbmc.executebuiltin("XBMC.Notification(MashUp Update,Updating...,3000,"+main.slogo+")")
-            try:os.remove(UpdateLocalFile)
-            except:pass
-            try: urllib.urlretrieve(UpdateUrl,UpdateLocalFile)
-            except:pass
-            if os.path.isfile(UpdateLocalFile):
-                extractFolder = xbmc.translatePath('special://home/addons')
-                pluginsrc =  xbmc.translatePath(os.path.join(extractFolder,UpdateDirName))
-                if autoupdate.unzipAndMove(UpdateLocalFile,extractFolder,pluginsrc):
-                    autoupdate.saveUpdateFile(UpdateVerPath,str(gitver))
-                    main.GA("Autoupdate",str(gitver)+" Successful")
-                    print "Mashup auto update - update install successful ("+str(gitver)+")"
-                    xbmc.executebuiltin("XBMC.Notification(MashUp Update,Successful,5000,"+main.slogo+")")
-                    xbmc.executebuiltin("XBMC.Container.Refresh")
+	if selfAddon.getSetting("autosource") == "false":
+                if selfAddon.getSetting("updateoption") == "gitupdate1":
+                    GitHubRepo    = 'gitupdate1'
+                    UpdateVerFile = 'gitupdate1'
+                    GitHubUser    = 'mashupdater'
+                elif selfAddon.getSetting("updateoption") == "gitupdate2":
+                    GitHubRepo    = 'gitupdate2'
+                    UpdateVerFile = 'gitupdate2'
+                    GitHubUser    = 'mashupdater'
                 else:
-                    print "Mashup auto update - update install failed ("+str(gitver)+")"
-                    xbmc.executebuiltin("XBMC.Notification(MashUp Update,Failed,3000,"+main.elogo+")")
-                    main.GA("Autoupdate",str(gitver)+" Failed")
-            else:
-                print "Mashup auto update - cannot find downloaded update ("+str(gitver)+")"
-                xbmc.executebuiltin("XBMC.Notification(MashUp Update,Failed,3000,"+main.elogo+")")
-                main.GA("Autoupdate",str(gitver)+" Repo problem")
-            try:os.remove(RunningFilePath)
-            except:pass
-        else:
-            if force: xbmc.executebuiltin("XBMC.Notification(MashUp Update,MashUp is up-to-date,3000,"+main.slogo+")")
-            print "Mashup auto update - Mashup is up-to-date ("+str(locver)+")"
-        return
-    
-
+                    GitHubRepo    = 'AutoUpdate'
+                    UpdateVerFile = 'update'
+                    GitHubUser    = 'mash2k3'
+		GitHubBranch  = 'master'
+		RunningFile   = 'running'
+		verCheck=True #main.CheckVersion()#Checks If Plugin Version is up to date
+		if verCheck == True:
+			from resources.libs import autoupdate
+			try:
+				print "Mashup auto update - started"
+				html=main.OPENURL('https://github.com/'+GitHubUser+'/'+GitHubRepo+'?files=1', mobile=True, verbose=False)
+			except: html=''
+			m = re.search("View (\d+) commit",html,re.I)
+			if m: gitver = int(m.group(1))
+			else: gitver = 0
+			UpdateVerPath = os.path.join(UpdatePath,UpdateVerFile)
+			try: locver = int(autoupdate.getUpdateFile(UpdateVerPath))
+			except: locver = 0
+			RunningFilePath = os.path.join(UpdatePath, RunningFile)
+			if locver < gitver and (not os.path.exists(RunningFilePath) or os.stat(RunningFilePath).st_mtime + 120 < time.time()) or force:
+				UpdateUrl = 'https://github.com/'+GitHubUser+'/'+GitHubRepo+'/archive/'+GitHubBranch+'.zip'
+				UpdateLocalName = GitHubRepo+'.zip'
+				UpdateDirName   = GitHubRepo+'-'+GitHubBranch
+				UpdateLocalFile = xbmc.translatePath(os.path.join(UpdatePath, UpdateLocalName))
+				main.setFile(RunningFilePath,'')
+				print "auto update - new update available ("+str(gitver)+")"
+				xbmc.executebuiltin("XBMC.Notification(MashUp Update,New Update detected,3000,"+main.slogo+")")
+				xbmc.executebuiltin("XBMC.Notification(MashUp Update,Updating...,3000,"+main.slogo+")")
+				try:os.remove(UpdateLocalFile)
+				except:pass
+				try: urllib.urlretrieve(UpdateUrl,UpdateLocalFile)
+				except:pass
+				if os.path.isfile(UpdateLocalFile):
+					extractFolder = xbmc.translatePath('special://home/addons')
+					pluginsrc =  xbmc.translatePath(os.path.join(extractFolder,UpdateDirName))
+					if autoupdate.unzipAndMove(UpdateLocalFile,extractFolder,pluginsrc):
+						autoupdate.saveUpdateFile(UpdateVerPath,str(gitver))
+						main.GA("Autoupdate",str(gitver)+" Successful")
+						print "Mashup auto update - update install successful ("+str(gitver)+")"
+						xbmc.executebuiltin("XBMC.Notification(MashUp Update,Successful,5000,"+main.slogo+")")
+						xbmc.executebuiltin("XBMC.Container.Refresh")
+						if selfAddon.getSetting('autochan')=='true':
+							xbmc.executebuiltin('XBMC.RunScript('+xbmc.translatePath(main.mashpath + '/resources/libs/changelog.py')+',Env)')
+					else:
+						print "Mashup auto update - update install failed ("+str(gitver)+")"
+						xbmc.executebuiltin("XBMC.Notification(MashUp Update,Failed,3000,"+main.elogo+")")
+						main.GA("Autoupdate",str(gitver)+" Failed")
+				else:
+					print "Mashup auto update - cannot find downloaded update ("+str(gitver)+")"
+					xbmc.executebuiltin("XBMC.Notification(MashUp Update,Failed,3000,"+main.elogo+")")
+					main.GA("Autoupdate",str(gitver)+" Repo problem")
+				try:os.remove(RunningFilePath)
+				except:pass
+			else:
+				if force: xbmc.executebuiltin("XBMC.Notification(MashUp Update,MashUp is up-to-date,3000,"+main.slogo+")")
+				print "Mashup auto update - Mashup is up-to-date ("+str(locver)+")"
+			return
+	else:
+		GitHubRepo    = 'bitautoupdate1'
+		GitHubUser    = 'mash2k3'
+		GitHubBranch  = 'master'
+		UpdateVerFile = 'bitupdate1'
+		RunningFile   = 'running'
+		verCheck=True #main.CheckVersion()#Checks If Plugin Version is up to date
+		if verCheck == True:
+			from resources.libs import autoupdate
+			try:
+                                import time
+				print "Mashup auto update - started"
+				html=main.OPENURL('https://bitbucket.org/api/1.0/repositories/'+GitHubUser+'/'+GitHubRepo+'/branches-tags?'+ str(time.time()), mobile=True, verbose=False)
+			except: html=''
+			m = re.search('"changeset": "([^"]+?)"',html,re.I)
+			if m: 
+				gitver = m.group(1)[0:7]
+				CommitNumber=m.group(1)[0:12]
+			else: gitver = 0
+			UpdateVerPath = os.path.join(UpdatePath,UpdateVerFile)
+			try: locver = autoupdate.getUpdateFile(UpdateVerPath)
+			except: locver = 0
+			RunningFilePath = os.path.join(UpdatePath, RunningFile)
+			if locver != gitver and (not os.path.exists(RunningFilePath) or os.stat(RunningFilePath).st_mtime + 120 < time.time()) or force:
+				UpdateUrl = 'https://bitbucket.org/'+GitHubUser+'/'+GitHubRepo+'/get/'+GitHubBranch+'.zip'
+				UpdateLocalName = GitHubRepo+'.zip'
+				UpdateDirName   = GitHubUser+'-'+GitHubRepo+'-'+CommitNumber
+				print UpdateDirName
+				UpdateLocalFile = xbmc.translatePath(os.path.join(UpdatePath, UpdateLocalName))
+				main.setFile(RunningFilePath,'')
+				print "auto update - new update available ("+str(gitver)+")"
+				xbmc.executebuiltin("XBMC.Notification(MashUp Update,New Update detected,3000,"+main.slogo+")")
+				xbmc.executebuiltin("XBMC.Notification(MashUp Update,Updating...,3000,"+main.slogo+")")
+				try:os.remove(UpdateLocalFile)
+				except:pass
+				try: urllib.urlretrieve(UpdateUrl,UpdateLocalFile)
+				except:pass
+				if os.path.isfile(UpdateLocalFile):
+                                        extractFolder = xbmc.translatePath('special://home/addons')
+                                        pluginsrc =  xbmc.translatePath(os.path.join(extractFolder,UpdateDirName))
+                                        if autoupdate.unzipAndMove(UpdateLocalFile,extractFolder,pluginsrc):
+						autoupdate.saveUpdateFile(UpdateVerPath,str(gitver))
+						main.GA("Autoupdate",str(gitver)+" Successful")
+						print "Mashup auto update - update install successful ("+str(gitver)+")"
+						xbmc.executebuiltin("XBMC.Notification(MashUp Update,Successful,5000,"+main.slogo+")")
+						xbmc.executebuiltin("XBMC.Container.Refresh")
+						if selfAddon.getSetting('autochan')=='true':
+							xbmc.executebuiltin('XBMC.RunScript('+xbmc.translatePath(main.mashpath + '/resources/libs/changelog.py')+',Env)')
+					else:
+						print "Mashup auto update - update install failed ("+str(gitver)+")"
+						xbmc.executebuiltin("XBMC.Notification(MashUp Update,Failed,3000,"+main.elogo+")")
+						main.GA("Autoupdate",str(gitver)+" Failed")
+				else:
+					print "Mashup auto update - cannot find downloaded update ("+str(gitver)+")"
+					xbmc.executebuiltin("XBMC.Notification(MashUp Update,Failed,3000,"+main.elogo+")")
+					main.GA("Autoupdate",str(gitver)+" Repo problem")
+				try:os.remove(RunningFilePath)
+				except:pass
+			else:
+				if force: xbmc.executebuiltin("XBMC.Notification(MashUp Update,MashUp is up-to-date,3000,"+main.slogo+")")
+				print "Mashup auto update - Mashup is up-to-date ("+str(locver)+")"
+			return
 
 def cacheSideReel():
     user = selfAddon.getSetting('srusername')
@@ -346,7 +436,10 @@ def TV():
     main.ClearDir(TempPath)
     if selfAddon.getSetting("stracker") == '0':
         main.addDir("SideReel Show Tracker",'Mash Up',397,art+'/sidereel.png')
+    elif selfAddon.getSetting("stracker") == '1':
+        main.addDir("Trakt Show Tracker",'Mash Up',429,art+'/trakt.png')
     else:
+        main.addDir("SideReel Show Tracker",'Mash Up',397,art+'/sidereel.png')
         main.addDir("Trakt Show Tracker",'Mash Up',429,art+'/trakt.png')
     main.addDir('Latest Episodes (Newmyvideolinks) True HD[COLOR red] DC[/COLOR]','TV',34,art+'/tvb.png')
     main.addDir('Latest Episodes (Rlsmix)[COLOR red](Debrid Only)[/COLOR] True HD[COLOR red] DC[/COLOR]','TV',61,art+'/tvb.png')
@@ -357,12 +450,12 @@ def TV():
     main.addDir('Latest Episodes (SceneLog) True HD[COLOR red] DC[/COLOR]','TV',657,art+'/tvb.png')
     main.addDir('Latest Episodes (IceFilms) True HD[COLOR red] DC[/COLOR]','TV',291,art+'/tvb.png')
     main.addDir('Latest Episodes (TubePlus)[COLOR red] DC[/COLOR]','http://www.tubeplus.me/browse/tv-shows/Last/ALL/',1041,art+'/tvb.png')
-    main.addDir('Latest Episodes (Watchseries)','http://watchseries.lt/tvschedule/-1',573,art+'/tvb.png')
+    main.addDir('Latest Episodes (Watchseries)','http://watchseries.ag/tvschedule/-1',573,art+'/tvb.png')
     main.addDir('Latest Episodes (iWatchonline)','http://www.iwatchonline.to/tv-schedule',592,art+'/tvb.png')
     main.addDir('Latest Episodes (Movie1k)','movintv',30,art+'/tvb.png')
     main.addDir('Latest Episodes (Oneclickwatch)','http://oneclickwatch.org',32,art+'/tvb.png')
     main.addDir('Latest Episodes (Seriesgate)','http://seriesgate.tv/latestepisodes/',602,art+'/tvb.png')
-    main.addDir('Latest 150 Episodes (ChannelCut)','http://www.channelcut.me/last-150',546,art+'/tvb.png')
+    main.addDir('Latest 150 Episodes (ChannelCut)','http://www.channelcut.tv/last-150',546,art+'/tvb.png')
     
 #     main.addDir('Latest 100 Episodes (Tv4stream)','http://www.tv4stream.info/last-100-links/',546,art+'/tvb.png')
     main.GA("None","TV-Latest")
@@ -394,13 +487,14 @@ def TVAll():
     main.addDir('Noobroom [COLOR red]DC[/COLOR]','TV',296,art+'/noobroom.png')
     main.addDir('MBox [COLOR red]DC[/COLOR]','TV',276,art+'/mbox.png')
     main.addDir('Yify','yify',421,art+'/yify.png')
+    main.addDir('Shush','TV',451,art+'/shush.png')
     main.addDir('SominalTvFilms','TV',619,art+'/sominal.png')
     main.addDir('Dramania','TV',268,art+'/dramania.png')
     main.addDir('SokroStream','french',324,art+'/sokrostream.png')
     main.addDir('Aflam1','arabic',335,art+'/aflam1.png')
     main.addDir('3Arabtv','arabic',351,art+'/3arabtv.png')
     main.addDir('MailRu','http://my.mail.ru/video/top',357,art+'/mailru.png')
-    main.addDir('Watching Now','TV',530,art+'/watchingnow.png')
+    #main.addDir('Watching Now','TV',530,art+'/watchingnow.png')
     main.addDir('FMA','TV',567,art+'/fma.png')
     #main.addDir('Global BC','gbc',165,art+'/globalbc.png')       
     main.GA("None","Plugin")
@@ -437,11 +531,10 @@ def HD():
     main.addDir('Latest HD Movies (Sceper)[COLOR red](Debrid Only)[/COLOR] True HD','http://sceper.ws/category/movies/movies-bluray-rip',541,art+'/hd2.png')
     main.addDir('Latest HD Movies (SceneSource)[COLOR red](Debrid Only)[/COLOR] True HD','http://www.scenesource.me/films/bluray/',389,art+'/hd2.png')
     main.addDir('Latest True 1080p Movies (FilesTube)[COLOR red](Debrid Only)[/COLOR]','HD',405,art+'/hd2.png')
-    main.addDir('Latest True 1080p Movies (DL4Free)[COLOR red](Debrid Only)[/COLOR]','HD',407,art+'/hd2.png')
+    main.addDir('Latest True 1080p Movies (Rls1Click)[COLOR red](Debrid Only)[/COLOR]','HD',407,art+'/hd2.png')
     main.addDir('Latest Movies (Oneclickwatch)','http://oneclickwatch.org/category/movies/',25,art+'/hd2.png')
     main.addDir('HackerMil HD Movies','https://raw.github.com/HackerMil/HackerMilsMovieStash/master/Movies/HD.xml',236,art+'/hd2.png')
     main.addDir('TNPB HD Movies','https://raw.github.com/mash2k3/MashUpTNPB/master/720p%20Movies.xml',236,art+'/hd2.png')
-    main.addDir('MorePower HD Movies','https://raw.github.com/mash2k3/MashUpMorePower/master/Full1080P.xml',236,art+'/hd2.png')
     main.addDir('Staael1982 HD Movies','https://raw.github.com/mash2k3/Staael1982/master/veehdCollection.xml',236,art+'/hd2.png')
     main.addDir('Demon88 HD Movies','https://raw.github.com/mash2k3/demon88/master/1080pMovies%20.xml',236,art+'/hd2.png')
     main.GA("None","HD")
@@ -462,7 +555,7 @@ def INT():
 
 def INTCAT(murl):
     if 'italian'in murl:
-        main.addDir('Italian Content Only','https://raw2.github.com/mash2k3/One242415/master/Foriegn/italiancontent.xml',236,art+'/intl.png')
+        main.addDir('Cinema Italiano','https://raw2.github.com/mash2k3/One242415/master/CinemaItaliano/cinemaitaliano_directory.xml',236,art+'/intl.png')
         main.addDir('Italian Series','https://raw2.github.com/mash2k3/One242415/master/Foriegn/italianseries.xml',236,art+'/intl.png')
         main.addDir('Live Italian TV','https://raw2.github.com/mash2k3/One242415/master/Foriegn/italianLiveTV.xml',236,art+'/intl.png')
     if 'russian' in murl:
@@ -487,6 +580,8 @@ def INTCAT(murl):
         main.addDir('Latest French Dubbed & Subtitled Movies (DPStreaming)','http://www.dps.com',311,art+'/intl.png')
         main.addDir('Latest French Dubbed & Subtitled Movies (SokroStream)','http://www.dps.com',324,art+'/intl.png')
         main.addDir('Latest French Dubbed & Subtitled Movies (Frenchstream)','http://www.dps.com',367,art+'/intl.png')
+        main.addDir('Latest French (FullStream)','http://www.dps.com',786,art+'/intl.png')
+        main.addDir('Latest French (FullStream 2)','http://www.dps.com',794,art+'/intl.png')
         main.addDir('Latest French Documentaire (Video Documentaire)','http://www.dps.com',331,art+'/intl.png')
     if 'kor' in murl:
         main.addDir('Latest Korean/Jappenese/Chinese Movies&Dramas (Dramania)','http://www.cinevip.org/',268,art+'/intl.png')
@@ -499,6 +594,7 @@ def SPORTS():
     main.addDir('TSN','http:/tsn.com',95,art+'/tsn.png')
     main.addDir('SkySports.com','www1.skysports.com',172,art+'/skysports.png')
     main.addDir('Fox Soccer  [COLOR red](US ONLY)[/COLOR]','http:/tsn.com',124,art+'/foxsoc.png')
+    main.addDir('MLB','mlb',447,art+'/mlb.png')
     main.addDir('All MMA','mma',537,art+'/mma.png')
     main.addDir('Outdoor Channel','http://outdoorchannel.com/',50,art+'/OC.png')
     main.addDir('My Outdoor TV','http://outdoorchannel.com/',360,art+'/myoutdoortv.png')
@@ -550,8 +646,7 @@ def KIDZone(murl):
     main.addDir('WB Kids','wbk',77,art+'/wb.png')
     main.addDir('Youtube Kids','wbk',84,art+'/youkids.png')
     main.addDir('TNPB KidsZone','https://raw.github.com/mash2k3/MashUpTNPB/master/kidszone.xml',236,art+'/kidzone2.png')
-    main.addDir('MorePower Family and Kids shows and movies','https://raw.github.com/mash2k3/MashUpMorePower/master/KidsShowsMovies.xml',236,art+'/kidzone2.png')
-    main.addDir('Staael1982 Animated Movies','https://raw.github.com/mash2k3/Staael1982/master/animated_movies.xml',236,art+'/kidzone2.png')
+    main.addDir('Staael1982 Animated Movies','https://github.com/mash2k3/Staael1982/raw/master/kids%20%26%20animation.xml',236,art+'/kidzone2.png')
             
     main.GA("None","KidZone")
     main.VIEWSB()
@@ -566,7 +661,7 @@ def LiveStreams():
     threading.Thread(target=showLiveAnnouncements).start()
     TVGuide = xbmc.translatePath('special://home/addons/script.tvguidedixie')
     if  os.path.exists(TVGuide):
-        main.addSpecial('TV Guide Dixie','guide',1500,art+'/tvguide.png')
+        main.addSpecial('OnTapp.tv','guide',1500,art+'/ontapp.png')
     main.addDir('Livestation News','http://mobile.livestation.com/',116,art+'/livestation.png')
     main.addDir('iLive Streams','ilive',119,art+'/ilive.png')
     main.addDir('Castalba Streams','castalgba',122,art+'/castalba.png')
@@ -574,6 +669,7 @@ def LiveStreams():
     main.addDir('By Country','navi',143,art+'/countrysec.png')
     main.addDir('Arabic Streams','navi',231,art+'/arabicstream.png')
     main.addDir('NHL [COLOR red]GOTHAM ONLY[/COLOR]','navi',394,art+'/nhl.png')
+    main.addDir('Kiwi','kiwi',439,art+'/kiwi.png')
     link=getListFile('https://raw.github.com/mash2k3/MashUpNotifications/master/LiveDirectory(mash2k3Only).xml',os.path.join(CachePath,'LiveStreams'))
     link=link.replace('\r','').replace('\n','').replace('\t','').replace('&nbsp;','').replace('type=playlistname=Sorted by user-assigned order','').replace('name=Sorted [COLOR=FF00FF00]by user-assigned order[/COLOR]','').replace('name=Live Tv Channels Twothumb','')
     match=re.compile('<name>(.+?)</name><link>(.+?)</link><thumbnail>(.+?)</thumbnail><mode>(.+?)</mode>').findall(link)
@@ -583,11 +679,13 @@ def LiveStreams():
         else:
             thumbs=art+'/'+thumb+'.png'
         main.addDir(name,url,int(mode),thumbs)
+    main.addDir('USA Live','na',457,art+'/usalive.png')
     main.addDir('SportsAccess','na',409,art+'/sportsaccess.png')
     if selfAddon.getSetting("customchannel") == "true":
         main.addDir('My XML Channels','nills',238,art+'/xml.png')
     main.addDir('TubTub.com','http://tubtub.com/',185,art+'/tubtub.png')
     main.addDir('181.FM Radio Streams','nills',191,art+'/181fm.png')
+    main.addDir('1.FM Radio Streams','nills',446,art+'/1fm.png')
     main.GA("None","Live")
 
 def DOCS():
@@ -600,7 +698,6 @@ def DOCS():
     main.addDir('Video Documentaire (French)','doc2',331,art+'/videodocumentaire.png')
     main.addDir('Documentary Log','doc3',86,art+'/doclog.png')
     main.addDir('HackerMil Documentaries','https://raw.github.com/HackerMil/HackerMilsMovieStash/master/Misc/7%20DOCUMENTARY.xml',236,art+'/docsec1.png')
-    main.addDir('MorePower Documentaries','https://raw.github.com/mash2k3/MashUpMorePower/master/Documentries.xml',236,art+'/docsec1.png')
     main.addDir('Documentaries (Movie25)','http://www.movie25.so/movies/documentary/',1,art+'/doc.png')
     main.GA("None","Documentary")
 
@@ -660,12 +757,93 @@ def MAINDEL(murl):
             main.ClearDir(xbmc.translatePath(cookie_file),True)
             xbmc.executebuiltin("XBMC.Notification(Clear XBMC Cache,Successful,5000,"")")
 
+
+def LIBRTMP(mname,murl,xname=''):
+    xname=str(xname)+' '+mname
+    url='http://www.mediafire.com/api/folder/get_content.php?folder_key='+murl+'&chunk=1&content_type=folders&response_format=json&rand=1789'
+    link = main.OPENURL(url)
+    link=link.replace('\r','').replace('\n','').replace('\t','').replace('&nbsp;','')
+    match=re.findall('{"folderkey":"([^"]+?)","name":"([^"]+?)","description":".+?,"created":"([^"]+?)","revision":".+?}',link)
+    for key,name,date in match:
+        if 'Android' in name and 'APK' not in name:
+            name= name +' [COLOR red](Requires Root)[/COLOR] Use APK for ALT solution'
+        main.addDirc(name,key,454,art+'/folder.png',xname,'','','','')
+    lurl='http://www.mediafire.com/api/folder/get_content.php?r=srhp&content_type=files&filter=all&order_by=name&order_direction=asc&chunk=1&version=2&folder_key='+murl+'&response_format=json'
+    link = main.OPENURL(lurl)
+    link=link.replace('\r','').replace('\n','').replace('\t','').replace('&nbsp;','')
+    match=re.findall('{"quickkey":"([^"]+?)","hash":"([^"]+?)","filename":"([^"]+?)","description":".+?,"created":"([^"]+?)",.+?}}',link)
+    for key,hash,fname,date in match:
+        if 'librtmp.' in fname:
+            main.addPlayc(fname,key,455,art+'/maintenance.png',xname,'','','','')
+        if '.apk' in fname:
+            main.addPlayc(fname,key,455,art+'/maintenance.png','APKINSTALLER','','','','')
+
+def DLLIBRTMP(mname,key,trigger):
+    import os
+    dialog = xbmcgui.Dialog()
+    if re.search('(?i)windows',trigger):
+            path=xbmc.translatePath('special://xbmc/system/players/dvdplayer/')
+    if re.search('(?i)ios',trigger):
+        ret = dialog.select('[COLOR=FF67cc33][B]Select Device[/COLOR][/B]',['iDevice','ATV2'])
+        if ret == -1:
+            return
+        elif ret == 0:
+            path=xbmc.translatePath('special://xbmc')
+            path=path.replace('XBMCData/XBMCHome','Frameworks')
+        elif ret == 1:
+            path=xbmc.translatePath('special://xbmc')
+            path=path.replace('XBMCData/XBMCHome','Frameworks')
+    if re.search('(?i)android',trigger):
+        path=xbmc.translatePath('/data/data/org.xbmc.xbmc/lib/')
+    if re.search('(?i)linux',trigger):
+        if re.search('(?i)32bit',trigger):
+            retex = dialog.select('[COLOR=FF67cc33][B]Select Device[/COLOR][/B]',['Linux Build','ATV1'])
+            if retex == -1:
+                return
+            elif retex == 0:
+                path=xbmc.translatePath(main.datapath)
+            elif retex == 1:
+                path=xbmc.translatePath(main.datapath)
+        else:
+            path=xbmc.translatePath(main.datapath)
+    if re.search('(?i)mac',trigger):
+        path=xbmc.translatePath('special://xbmc')
+        path=path.replace('Resources/XBMC','Frameworks')
+    if re.search('(?i)raspi',trigger):
+        path=xbmc.translatePath('/opt/xbmc-bcm/xbmc-bin/lib/xbmc/system/')
+    
+    if re.search('APKINSTALLER',trigger):
+        path=xbmc.translatePath('special://home')
+        
+    url='http://www.mediafire.com/download/'+key+'/'+name
+    link = main.OPENURL(url)
+    link=link.replace('\r','').replace('\n','').replace('\t','').replace('&nbsp;','')    
+    match=re.findall('kNO = "([^"]+?)";',link)[0]
+    lib=os.path.join(path,name)
+    downloadFileWithDialog(match,lib)
+    if re.search('(?i)linux',trigger):
+        keyb = xbmc.Keyboard('', 'Enter Root Password')
+        keyb.doModal()
+        if (keyb.isConfirmed()):
+            sudoPassword = keyb.getText()
+            if retex == 1:
+                command = 'mv '+path+' /usr/lib/i386-linux-gnu/'
+            else:
+                command = 'mv '+path+' /usr/lib/'
+            p = os.system('echo %s|sudo -S %s' % (sudoPassword, command))
+            os.remove(lib)
+    if re.search('APKINSTALLER',trigger):
+        dialog.ok("Mash Up", "Thats It All Done", "[COLOR blue]Download location[/COLOR]",path) 
+    else:
+        dialog.ok("Mash Up", "Thats It All Done", "[COLOR blue]Now should be Updated[/COLOR]")
+        
 def MAINTENANCE(name):
     if name == 'MAINTENANCE':
         main.addSpecial('Delete Packages Folder','packages',416,art+'/maintenance.png')
         main.addSpecial('Fix Database Malformed','Malformed',416,art+'/maintenance.png')
         main.addSpecial('Install latest UrlResolver','UrlResolver',416,art+'/maintenance.png')
         main.addSpecial('Install latest MetaHandler','MetaHandler',416,art+'/maintenance.png')
+        main.addDir('Update LibRTMP by RedPenguin','x4cvp5hl4m9xr',454,art+'/maintenance.png')
         main.addSpecial('Clear XBMC Cache','ClearCache',416,art+'/maintenance.png')
         main.addSpecial('Clear MashUp Cache & Cookies','MashCache',416,art+'/maintenance.png')
     else:
@@ -859,28 +1037,6 @@ def downloadFileWithDialog(url,dest):
 def UploadLog():
     from resources.fixes import addon
     addon.LogUploader()
-def GetRepo():
-    repopath = xbmc.translatePath(os.path.join('special://home/addons', 'repository.mash2k3'))
-    try:
-        repo = os.path.join(repopath, 'addon.xml')
-        repofile = open(repo, 'r').read()
-        repov=re.compile('version="([^"]+?)" provider-name').findall(repofile)
-        if repov:
-            RepoVer = repov[0]
-                
-    except:
-        RepoVer='Repo Not Intalled'
-    print "Repo Ver: "+RepoVer
-    if RepoVer!='1.7':
-        try:
-            url = 'http://repo.mashupxbmc.com/zips/repository.mash2k3/repository.mash2k3-1.7.zip'
-            path = xbmc.translatePath(os.path.join('special://home/addons','packages'))
-            lib=os.path.join(path, 'repository.mash2k3-1.7.zip')
-            if main.downloadFile(url,lib,silent = True):
-                print lib
-                addonfolder = xbmc.translatePath(os.path.join('special://home/addons',''))
-            xbmc.executebuiltin("XBMC.Extract(%s,%s)"%(lib,addonfolder))
-        except: pass
 
 repopath = xbmc.translatePath(os.path.join('special://home/addons', 'repository.divingmule.addons'))
 try: 
@@ -1285,9 +1441,10 @@ if mode and url:
         main.setFile(DailyFilePath,'',True)
 
 if mode==None or url==None or len(url)<1:
+    threading.Thread(target=Announcements).start()
     if ENV is 'Prod':
         threading.Thread(target=CheckForAutoUpdate).start()
-        threading.Thread(target=GetRepo).start()
+        
         
     else:
         threading.Thread(target=CheckForAutoUpdateDev).start()
@@ -1295,7 +1452,7 @@ if mode==None or url==None or len(url)<1:
     threading.Thread(target=cacheTrakt).start()
     threading.Thread(target=Notify).start()
     MAIN()
-    threading.Thread(target=Announcements).start()
+    
     main.VIEWSB()        
    
 elif mode==1:
@@ -3155,14 +3312,14 @@ elif mode==406:
     filestube.LINKSP3(name,url)
     
 elif mode==407:
-    from resources.libs.movies_tv import dl4free
+    from resources.libs.movies_tv import rls1click
     print ""+url
-    dl4free.LISTSP3(url)
+    rls1click.LISTSP3(url)
 
 elif mode==408:
-    from resources.libs.movies_tv import dl4free
+    from resources.libs.movies_tv import rls1click
     print ""+url
-    dl4free.LINKSP3(name,url)
+    rls1click.LINKSP3(name,url)
 
 elif mode==409:
     from resources.libs.live import skyaccess
@@ -3274,7 +3431,103 @@ elif mode==437:
 elif mode==438:
     from resources.libs.international import catiii
     catiii.SEARCH(url)
- 
+
+elif mode==439:
+    from resources.libs.live import kiwi
+    print ""+url
+    kiwi.MAIN()
+
+elif mode==440:
+    from resources.libs.live import kiwi
+    print ""+url
+    kiwi.setTimeZone()
+
+elif mode==441:
+    from resources.libs.live import kiwi
+    print ""+url
+    kiwi.Link(name,url,iconimage)
+
+elif mode==442:
+    from resources.libs.live import kiwi
+    print ""+url
+    kiwi.AllStreams()
+
+elif mode==443:
+    from resources.libs.live import sportspack
+    print ""+url
+    sportspack.MAIN()
+
+elif mode==444:
+    from resources.libs.live import sportspack
+    print ""+url
+    sportspack.LIST(url)
+
+elif mode==445:
+    from resources.libs.live import sportspack
+    print ""+url
+    sportspack.LINK(name,url,iconimage)
+
+elif mode==446:
+    from resources.libs.live import onefm
+    print ""+url
+    onefm.MAIN()
+
+
+elif mode==447:
+    from resources.libs.sports import mlb
+    print ""+url
+    mlb.MAIN()
+
+elif mode==448:
+    from resources.libs.sports import mlb
+    print ""+url
+    mlb.LIST(url)
+
+elif mode==449:
+    from resources.libs.sports import mlb
+    print ""+url
+    mlb.LINK(name,url,iconimage)
+
+elif mode==450:
+    from resources.libs.sports import mlb
+    print ""+url
+    mlb.LIST2(url)
+
+elif mode==451:
+    from resources.libs.plugins import shush
+    print ""+url
+    shush.MAIN(url)
+
+elif mode==452:
+    from resources.libs.plugins import shush
+    print ""+url
+    shush.LIST(name,url,iconimage)
+
+elif mode==453:
+    from resources.libs.plugins import shush
+    print ""+url
+    shush.LINK(name,url,iconimage)
+
+elif mode==454:
+    LIBRTMP(name,url,plot)
+
+elif mode==455:
+    DLLIBRTMP(name,url,plot)
+
+elif mode==456:
+    from resources.libs.movies_tv import sidereel
+    print ""+url
+    sidereel.EntCreds(url)
+
+elif mode==457:
+    from resources.libs.live import ibrod
+    print ""+url
+    ibrod.USALIST(url)
+
+elif mode==458:
+    from resources.libs.live import ibrod
+    print ""+url
+    ibrod.USALINK(name,url,iconimage)
 ######################################################################################################
 elif mode==500:
     TVAll()        
@@ -3827,6 +4080,70 @@ elif mode == 784:
 elif mode == 785:
     print ""+url
     FIXDOWN(name,url,location,path)
+elif mode==786:
+    from resources.libs.plugins import fullstream
+    print ""+url
+    fullstream.MAINFULLS()
+elif mode==787:
+    from resources.libs.plugins import fullstream
+    print ""+url
+    fullstream.LISTFULLS(url)
+elif mode==788:
+    from resources.libs.plugins import fullstream
+    print ""+url
+    fullstream.LINKLIST(name,url)
+elif mode==789:
+    from resources.libs.plugins import fullstream
+    print ""+url
+    fullstream.LINKFULLS(name,url)
+elif mode==790:
+    from resources.libs.plugins import fullstream
+    print ""+url
+    fullstream.LISTEPISODE(name,url)
+elif mode==791:
+    from resources.libs.plugins import fullstream
+    print ""+url
+    fullstream.LINKLIST2(name,url)
+elif mode==792:
+    from resources.libs.plugins import fullstream
+    print ""+url
+    fullstream.SEARCHFULLS()
+elif mode==793:
+    from resources.libs.plugins import fullstream
+    print ""+url
+    fullstream.GENRESFULLS()
+elif mode==794:
+    from resources.libs.plugins import fullstream2
+    print ""+url
+    fullstream2.MAINFULLS()
+elif mode==795:
+    from resources.libs.plugins import fullstream2
+    print ""+url
+    fullstream2.LISTFULLS(url)
+elif mode==796:
+    from resources.libs.plugins import fullstream2
+    print ""+url
+    fullstream2.LINKLIST(name,url)
+elif mode==797:
+    from resources.libs.plugins import fullstream2
+    print ""+url
+    fullstream2.LINKFULLS(name,url)
+elif mode==798:
+    from resources.libs.plugins import fullstream2
+    print ""+url
+    fullstream2.LISTEPISODE(name,url)
+elif mode==799:
+    from resources.libs.plugins import fullstream2
+    print ""+url
+    fullstream2.SEARCHFULLS()
+elif mode==800:
+    from resources.libs.plugins import fullstream2
+    print ""+url
+    fullstream2.GENRESFULLS()
+elif mode==801:
+    from resources.libs.plugins import fullstream2
+    print ""+url
+    fullstream2.QLTFULLS()
         
 elif mode == 1000:
     from resources.libs.plugins import tvrelease
