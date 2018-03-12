@@ -1,13 +1,7 @@
 <advancedsettings>
-    <network>
-        <cachemembuffersize>5242880</cachemembuffersize>
-		<curlclienttimeout>45</curlclienttimeout>
-    </network>
-    <gui>    
-        <algorithmdirtyregions>3</algorithmdirtyregions>
-        <nofliptimeout>0</nofliptimeout>
-    </gui>
-    <videoscanner>
-        <ignoreerrors>true</ignoreerrors>
-    </videoscanner>
+  <cache>
+    <buffermode>1</buffermode>
+    <memorysize>139460608</memorysize>
+    <readfactor>20</readfactor>
+  </cache>
 </advancedsettings>
