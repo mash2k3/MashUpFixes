@@ -1,0 +1,339 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="ESPNEWS.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524153.png" tvg-name="ESPNNews" tvg-num="1", ESPNNews
+https://cdn-01.satoshistreams.net/viewsa/ch01q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="ESPN.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524153-1.png" tvg-name="ESPN" tvg-num="2", ESPN
+https://cdn-01.satoshistreams.net/viewsa/ch02q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="ESPN2.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524153-2.png" tvg-name="ESPN2" tvg-num="3", ESPN2
+https://cdn-01.satoshistreams.net/viewsa/ch03q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="ESPNU.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524153-3.png" tvg-name="ESPNU" tvg-num="4", ESPNU
+https://cdn-01.satoshistreams.net/viewsa/ch04q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="FoxSports1.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524153-4.png" tvg-name="FS1" tvg-num="5", FS1
+https://cdn-01.satoshistreams.net/viewsa/ch05q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="FoxSports2.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524153-5.png" tvg-name="FS2" tvg-num="6", FS2
+https://cdn-01.satoshistreams.net/viewsa/ch06q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NFLNetwork.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524153-6.png" tvg-name="NFL Network" tvg-num="7", NFL Network
+https://cdn-01.satoshistreams.net/viewsa/ch07q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBAtv.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524153-7.png" tvg-name="NBA TV" tvg-num="8", NBA TV
+https://cdn-01.satoshistreams.net/viewsa/ch08q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="MLBNetwork.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524153-8.png" tvg-name="MLB Network" tvg-num="9", MLB Network
+https://cdn-01.satoshistreams.net/viewsa/ch09q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NHLNetwork.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524153-9.png" tvg-name="NHL Network" tvg-num="10", NHL Network
+https://cdn-01.satoshistreams.net/viewsa/ch10q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SkySportsNews.uk" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-2.png" tvg-name="SSN" tvg-num="11", SSN
+https://cdn-01.satoshistreams.net/viewsa/ch11q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="GolfChannel.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-10.png" tvg-name="Golf Channel" tvg-num="12", Golf Channel
+https://cdn-01.satoshistreams.net/viewsa/ch12q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="TennisChannel.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-15.png" tvg-name="Tennis Channel" tvg-num="13", Tennis Channel
+https://cdn-01.satoshistreams.net/viewsa/ch13q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CBSSportsNetwork.us" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-19.png" tvg-name="CBS Sports Network" tvg-num="14", CBS Sports Network
+https://cdn-01.satoshistreams.net/viewsa/ch14q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="TSN3.ca" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/15s.png" tvg-name="TSN 3" tvg-num="15", TSN 3
+https://cdn-01.satoshistreams.net/viewsa/ch15q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="TSN2.ca" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/16s.png" tvg-name="TSN 2" tvg-num="16", TSN 2
+https://cdn-01.satoshistreams.net/viewsa/ch16q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SportsnetWorld.ca" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-24.png" tvg-name="SN World" tvg-num="17", SN World
+https://cdn-01.satoshistreams.net/viewsa/ch17q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="Sportsnet360.ca" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-26.png" tvg-name="SN 360" tvg-num="18", SN 360
+https://cdn-01.satoshistreams.net/viewsa/ch18q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SportsnetOne.ca" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-27.png" tvg-name="SN Ontario" tvg-num="19", SN Ontario
+https://cdn-01.satoshistreams.net/viewsa/ch19q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SportsnetOntario.ca" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-28.png" tvg-name="SNET1" tvg-num="20", SNET1
+https://cdn-01.satoshistreams.net/viewsa/ch20q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="TSN4.ca" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-29.png" tvg-name="TSN 4" tvg-num="21", TSN 4
+https://cdn-01.satoshistreams.net/viewsa/ch21q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SportsnetPacific.ca" group-title="Sports News" tvg-logo="https://list.satoshistreams.net/uploads/22s.png" tvg-name="SN Pacific" tvg-num="22", SN Pacific
+https://cdn-01.satoshistreams.net/viewsa/ch22q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CP24.ca" group-title="NEWS" tvg-logo="https://list.satoshistreams.net/uploads/23s.png" tvg-name="CP 24" tvg-num="23", CP 24
+https://cdn-01.satoshistreams.net/viewsa/ch23q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="beINSports.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/beinsmall.png" tvg-name="Bein Sports" tvg-num="24", Bein Sports
+https://cdn-01.satoshistreams.net/viewsa/ch24q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="beINSportsEnEspanol.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/beinessmall.png" tvg-name="Bein Deportes" tvg-num="25", Bein Deportes
+https://cdn-01.satoshistreams.net/viewsa/ch25q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="USANetwork.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-34.png" tvg-name="USA" tvg-num="26", USA
+https://cdn-01.satoshistreams.net/viewsa/ch26q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="TLC.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-55.png" tvg-name="TLC" tvg-num="27", TLC
+https://cdn-01.satoshistreams.net/viewsa/ch27q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="TBS.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-36.png" tvg-name="TBS" tvg-num="28", TBS
+https://cdn-01.satoshistreams.net/viewsa/ch28q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="TNT.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-37.png" tvg-name="TNT" tvg-num="29", TNT
+https://cdn-01.satoshistreams.net/viewsa/ch29q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CartoonNetwork.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-39.png" tvg-name="Cartoon Network" tvg-num="30", Cartoon Network
+https://cdn-01.satoshistreams.net/viewsa/ch30q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="ABCEast_WABC.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/abcSmall.png" tvg-name="ABC" tvg-num="31", ABC
+https://cdn-01.satoshistreams.net/viewsa/ch31q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="HBO.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/HBOSmall.png" tvg-name="HBO" tvg-num="32", HBO
+https://cdn-01.satoshistreams.net/viewsa/ch32q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="Showtime.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/Shosmall.png" tvg-name="Showtime" tvg-num="33", Showtime
+https://cdn-01.satoshistreams.net/viewsa/ch33q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBCWGRZ.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-42.png" tvg-name="NBC" tvg-num="34", NBC
+https://cdn-01.satoshistreams.net/viewsa/ch34q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CBSWIVB-EAST.ca" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/cbsSmall.png" tvg-name="CBS" tvg-num="35", CBS
+https://cdn-01.satoshistreams.net/viewsa/ch35q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="FOX" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/FoxSmall.png" tvg-name="FOX" tvg-num="36", FOX
+https://cdn-01.satoshistreams.net/viewsa/ch36q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SpectrumSportsNetLADodgers.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/SNLAsmall.png" tvg-name="Sportsnet Los Angeles" tvg-num="37", Sportsnet Los Angeles
+https://cdn-01.satoshistreams.net/viewsa/ch37q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="YesNetwork.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/YesSmall.png" tvg-name="YES Network" tvg-num="38", YES Network
+https://cdn-01.satoshistreams.net/viewsa/ch38q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NESN.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/nesn-small.png" tvg-name="NESN" tvg-num="39", NESN
+https://cdn-01.satoshistreams.net/viewsa/ch39q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SNY.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/c5v6t5m1s80g04wgc4.png" tvg-name="SNY" tvg-num="40", SNY
+https://cdn-01.satoshistreams.net/viewsa/ch40q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="MSG.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/MSGSmall.png" tvg-name="MSG" tvg-num="41", MSG
+https://cdn-01.satoshistreams.net/viewsa/ch41q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BallySportsSoutheast.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/southeastSmall.png" tvg-name="Bally Sports Southeast" tvg-num="42", Bally Sports Southeast
+https://cdn-01.satoshistreams.net/viewsa/ch42q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BallySportsGreatLakes.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/BSGLSmall.png" tvg-name="Bally Sports Great Lakes" tvg-num="43", Bally Sports Great Lakes
+https://cdn-01.satoshistreams.net/viewsa/ch43q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BallySportsOhio.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/BallyOhioSmall.png" tvg-name="Bally Sports Ohio" tvg-num="44", Bally Sports Ohio
+https://cdn-01.satoshistreams.net/viewsa/ch44q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="FoxNewsChannel.us" group-title="NEWS" tvg-logo="https://list.satoshistreams.net/uploads/foxsmall.png" tvg-name="Fox News" tvg-num="45", Fox News
+https://cdn-01.satoshistreams.net/viewsa/ch45q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBCSPortsPhilly" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/xbnl9vl5ipwkkwkkos.png" tvg-name="NBC Sports Philly" tvg-num="46", NBC Sports Philly
+https://cdn-01.satoshistreams.net/viewsa/ch46q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BallySportsWest.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/westSmall.png" tvg-name="Bally Sports West" tvg-num="47", Bally Sports West
+https://cdn-01.satoshistreams.net/viewsa/ch47q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="MarqueeSports.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/MARQsmall.png" tvg-name="Marquee Sports Network" tvg-num="48", Marquee Sports Network
+https://cdn-01.satoshistreams.net/viewsa/ch48q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBCSportsChicago.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/3f905z7pvo00wgwc8s.png" tvg-name="NBC Sports Chicago" tvg-num="49", NBC Sports Chicago
+https://cdn-01.satoshistreams.net/viewsa/ch49q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBCSportsCalifornia.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/m2ljmni6t74cg8gw8w.png" tvg-name="NBC Sports California" tvg-num="50", NBC Sports California
+https://cdn-01.satoshistreams.net/viewsa/ch50q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBCSportsBayArea.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/2jl9046781ics4ksow.png" tvg-name="NBC Sports Bay Area" tvg-num="51", NBC Sports Bay Area
+https://cdn-01.satoshistreams.net/viewsa/ch51q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SECNetwork.us" group-title="NCAA Networks" tvg-logo="https://list.satoshistreams.net/uploads/25q4r0zt64sko4kkkw.png" tvg-name="SEC Network" tvg-num="52", SEC Network
+https://cdn-01.satoshistreams.net/viewsa/ch52q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="Pac12Network.us" group-title="NCAA Networks" tvg-logo="https://list.satoshistreams.net/uploads/g07gvwvotn48wsoc0c.png" tvg-name="PAC12" tvg-num="53", PAC12
+https://cdn-01.satoshistreams.net/viewsa/ch53q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BigTen.us" group-title="NCAA Networks" tvg-logo="https://list.satoshistreams.net/uploads/2lkbqbhr3dogkkg4c4.png" tvg-name="BTN" tvg-num="54", BTN
+https://cdn-01.satoshistreams.net/viewsa/ch54q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="ACCNetwork.us" group-title="NCAA Networks" tvg-logo="https://list.satoshistreams.net/uploads/k0vmwyyn7vkgoccgk0.png" tvg-name="ACC Network" tvg-num="55", ACC Network
+https://cdn-01.satoshistreams.net/viewsa/ch55q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="ATTSportsNetSouthWest.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/attswSmall.png" tvg-name="AT&T Sportsnet Southwest" tvg-num="56", AT&T Sportsnet Southwest
+https://cdn-01.satoshistreams.net/viewsa/ch56q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="StarzEncore.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/1518524155-6.png" tvg-name="Starz Encore" tvg-num="57", Starz Encore
+https://cdn-01.satoshistreams.net/viewsa/ch57q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="History.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-49.png" tvg-name="History" tvg-num="58", History
+https://cdn-01.satoshistreams.net/viewsa/ch58q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="DiscoveryChannel.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-50.png" tvg-name="Discovery" tvg-num="59", Discovery
+https://cdn-01.satoshistreams.net/viewsa/ch59q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="FX.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-52.png" tvg-name="FX" tvg-num="60", FX
+https://cdn-01.satoshistreams.net/viewsa/ch60q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="FXX.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/FXXSmall.png" tvg-name="FXX" tvg-num="61", FXX
+https://cdn-01.satoshistreams.net/viewsa/ch61q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="FoodNetwork.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/1lug4ygq6gsgs0wosk.png" tvg-name="Food Network" tvg-num="62", Food Network
+https://cdn-01.satoshistreams.net/viewsa/ch62q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="MSNBC.us" group-title="NEWS" tvg-logo="https://list.satoshistreams.net/uploads/h3ik7iwnic8cckc0ww.png" tvg-name="MSNBC" tvg-num="63", MSNBC
+https://cdn-01.satoshistreams.net/viewsa/ch63q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CNBC.us" group-title="NEWS" tvg-logo="https://list.satoshistreams.net/uploads/CNBCSmall.png" tvg-name="CNBC" tvg-num="64", CNBC
+https://cdn-01.satoshistreams.net/viewsa/ch64q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SPORTTV1.pt" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/m3k8ay8vxlwwccw4w.png" tvg-name="Sport TV 1" tvg-num="65", Sport TV 1
+https://cdn-01.satoshistreams.net/viewsa/ch65q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SPORTTV2.pt" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/38fmi6xc4dgkgc4s4s.png" tvg-name="Sport TV 2" tvg-num="66", Sport TV 2
+https://cdn-01.satoshistreams.net/viewsa/ch66q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BTSport1.uk" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/1518524153-16.png" tvg-name="BT Sports 1" tvg-num="67", BT Sports 1
+https://cdn-01.satoshistreams.net/viewsa/ch67q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BTSport2.uk" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/1518524153-17.png" tvg-name="BT Sports 2" tvg-num="68", BT Sports 2
+https://cdn-01.satoshistreams.net/viewsa/ch68q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BTSport3.uk" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/1518524154.png" tvg-name="BT Sports 3" tvg-num="69", BT Sports 3
+https://cdn-01.satoshistreams.net/viewsa/ch69q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BTSport4.uk" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-1.png" tvg-name="BT Sports ESPN" tvg-num="70", BT Sports ESPN
+https://cdn-01.satoshistreams.net/viewsa/ch70q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SkySportsMainEvent.uk" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-3.png" tvg-name="SS Main Event" tvg-num="71", SS Main Event
+https://cdn-01.satoshistreams.net/viewsa/ch71q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-4.png" tvg-name="SS Cricket" tvg-num="72", SS Cricket
+https://cdn-01.satoshistreams.net/viewsa/ch72q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SkySportsGolf.uk" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-6.png" tvg-name="SS Golf" tvg-num="73", SS Golf
+https://cdn-01.satoshistreams.net/viewsa/ch73q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SkySportsPremierLeague.uk" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-7.png" tvg-name="SS PL" tvg-num="74", SS PL
+https://cdn-01.satoshistreams.net/viewsa/ch74q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SkySportsF1.uk" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-8.png" tvg-name="SS F1 UK" tvg-num="75", SS F1 UK
+https://cdn-01.satoshistreams.net/viewsa/ch75q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SkySportsFootball.uk" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/1518524154-11.png" tvg-name="SS Football" tvg-num="76", SS Football
+https://cdn-01.satoshistreams.net/viewsa/ch76q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="PremierSports1.uk" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/premierSportsSmall.png" tvg-name="Premier Sports 1" tvg-num="77", Premier Sports 1
+https://cdn-01.satoshistreams.net/viewsa/ch77q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="SuperSportFootballPlusAfrica.ug" group-title="UK" tvg-logo="https://list.satoshistreams.net/uploads/PS2S.png" tvg-name="SS Football Plus" tvg-num="78", SS Football Plus
+https://cdn-01.satoshistreams.net/viewsa/ch78q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBCSportsBoston.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/NBCBostonS.png" tvg-name="NBC Sports Boston" tvg-num="79", NBC Sports Boston
+https://cdn-01.satoshistreams.net/viewsa/ch79q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BallySportsWisconsin.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/BWisS.png" tvg-name="Bally Sports Wisconsin" tvg-num="80", Bally Sports Wisconsin
+https://cdn-01.satoshistreams.net/viewsa/ch80q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BallySportsWisconsinPlus.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/BWisPlusS.png" tvg-name="Bally Sports Wisconsin Plus" tvg-num="81", Bally Sports Wisconsin Plus
+https://cdn-01.satoshistreams.net/viewsa/ch81q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BallySportsNorth.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/BSNS.png" tvg-name="Bally Sports North" tvg-num="82", Bally Sports North
+https://cdn-01.satoshistreams.net/viewsa/ch82q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="ATTSportsNetPittsburgh.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/ATTS.png" tvg-name="Sportsnet Pittsburgh" tvg-num="83", Sportsnet Pittsburgh
+https://cdn-01.satoshistreams.net/viewsa/ch83q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BallySportsDetroit.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/BSDS.png" tvg-name="Bally Sports Detroit" tvg-num="84", Bally Sports Detroit
+https://cdn-01.satoshistreams.net/viewsa/ch84q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="ATTSportsNetRockyMountain.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/ATTS.png" tvg-name="SportsNet Rocky Mountains" tvg-num="85", SportsNet Rocky Mountains
+https://cdn-01.satoshistreams.net/viewsa/ch85q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BallySportsSun.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/SUNS.png" tvg-name="Bally Sports SUN" tvg-num="86", Bally Sports SUN
+https://cdn-01.satoshistreams.net/viewsa/ch86q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BallySportsFlorida.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/FLS.png" tvg-name="Bally Sports Florida" tvg-num="87", Bally Sports Florida
+https://cdn-01.satoshistreams.net/viewsa/ch87q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBCSportsWashington.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/WSHS.png" tvg-name="NBC Sports Washington" tvg-num="88", NBC Sports Washington
+https://cdn-01.satoshistreams.net/viewsa/ch88q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BallySportsSouthwest.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/BSSWS.png" tvg-name="Bally Sports South West" tvg-num="89", Bally Sports South West
+https://cdn-01.satoshistreams.net/viewsa/ch89q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="US0" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/USsmall.png" tvg-name="US Event Channel #0" tvg-num="90", US Event Channel #0
+https://cdn-01.satoshistreams.net/viewsa/ch90q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="US1" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/USsmall.png" tvg-name="US Event Channel #1" tvg-num="91", US Event Channel #1
+https://cdn-01.satoshistreams.net/viewsa/ch91q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="US2" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/USsmall.png" tvg-name="US Event Channel #2" tvg-num="92", US Event Channel #2
+https://cdn-01.satoshistreams.net/viewsa/ch92q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="US3" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/USsmall.png" tvg-name="US Event Channel #3" tvg-num="93", US Event Channel #3
+https://cdn-01.satoshistreams.net/viewsa/ch93q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="US4" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/USsmall.png" tvg-name="US Event Channel #4" tvg-num="94", US Event Channel #4
+https://cdn-01.satoshistreams.net/viewsa/ch94q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="US5" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/USsmall.png" tvg-name="US Event Channel #5" tvg-num="95", US Event Channel #5
+https://cdn-01.satoshistreams.net/viewsa/ch95q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="US6" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/USsmall.png" tvg-name="US Event Channel #6" tvg-num="96", US Event Channel #6
+https://cdn-01.satoshistreams.net/viewsa/ch96q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="US7" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/USsmall.png" tvg-name="US Event Channel #7" tvg-num="97", US Event Channel #7
+https://cdn-01.satoshistreams.net/viewsa/ch97q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="US8" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/USsmall.png" tvg-name="US Event Channel #8" tvg-num="98", US Event Channel #8
+https://cdn-01.satoshistreams.net/viewsa/ch98q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="US9" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/USsmall.png" tvg-name="US Event Channel #9" tvg-num="99", US Event Channel #9
+https://cdn-01.satoshistreams.net/viewsa/ch99q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="US10" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="US Event Channel #10" tvg-num="100", US Event Channel #10
+https://cdn-01.satoshistreams.net/viewsa/ch100q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="US11" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/720Small.png" tvg-name="720 PPV" tvg-num="101", 720 PPV
+https://cdn-01.satoshistreams.net/viewsa/ch101q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="1080PPV" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/720Small.png" tvg-name="1080 PPV" tvg-num="102", 1080 PPV
+https://cdn-01.satoshistreams.net/viewsa/ch102q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBALeaguePass1.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #1" tvg-num="103", MLB #1
+https://cdn-01.satoshistreams.net/viewsa/ch103q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBALeaguePass2.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #2" tvg-num="104", MLB #2
+https://cdn-01.satoshistreams.net/viewsa/ch104q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBALeaguePass3.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #3" tvg-num="105", MLB #3
+https://cdn-01.satoshistreams.net/viewsa/ch105q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBALeaguePass4.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #4" tvg-num="106", MLB #4
+https://cdn-01.satoshistreams.net/viewsa/ch106q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBALeaguePass5.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #5" tvg-num="107", MLB #5
+https://cdn-01.satoshistreams.net/viewsa/ch107q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBALeaguePass6.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #6" tvg-num="108", MLB #6
+https://cdn-01.satoshistreams.net/viewsa/ch108q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBALeaguePass7.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #7" tvg-num="109", MLB #7
+https://cdn-01.satoshistreams.net/viewsa/ch109q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBALeaguePass8.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #8" tvg-num="110", MLB #8
+https://cdn-01.satoshistreams.net/viewsa/ch110q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBALeaguePass9.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #9" tvg-num="111", MLB #9
+https://cdn-01.satoshistreams.net/viewsa/ch111q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NHLCenterIce11.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #10" tvg-num="112", MLB #10
+https://cdn-01.satoshistreams.net/viewsa/ch112q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NHLCenterIce1.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #11" tvg-num="113", MLB #11
+https://cdn-01.satoshistreams.net/viewsa/ch113q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NHLCenterIce2.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #12" tvg-num="114", MLB #12
+https://cdn-01.satoshistreams.net/viewsa/ch114q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NHLCenterIce3.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #13" tvg-num="115", MLB #13
+https://cdn-01.satoshistreams.net/viewsa/ch115q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NHLCenterIce4.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #14" tvg-num="116", MLB #14
+https://cdn-01.satoshistreams.net/viewsa/ch116q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NHLCenterIce5.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #15" tvg-num="117", MLB #15
+https://cdn-01.satoshistreams.net/viewsa/ch117q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NHLCenterIce6.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB #16" tvg-num="118", MLB #16
+https://cdn-01.satoshistreams.net/viewsa/ch118q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NHLCenterIce7.us" group-title="MLB" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MLB StrikeZone" tvg-num="119", MLB StrikeZone
+https://cdn-01.satoshistreams.net/viewsa/ch119q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA0" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #0" tvg-num="120", CA Event Channel #0
+https://cdn-01.satoshistreams.net/viewsa/ch120q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA1" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #1" tvg-num="121", CA Event Channel #1
+https://cdn-01.satoshistreams.net/viewsa/ch121q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA2" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #2" tvg-num="122", CA Event Channel #2
+https://cdn-01.satoshistreams.net/viewsa/ch122q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA3" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #3" tvg-num="123", CA Event Channel #3
+https://cdn-01.satoshistreams.net/viewsa/ch123q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA4" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #4" tvg-num="124", CA Event Channel #4
+https://cdn-01.satoshistreams.net/viewsa/ch124q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA5" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #5" tvg-num="125", CA Event Channel #5
+https://cdn-01.satoshistreams.net/viewsa/ch125q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA6" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #6" tvg-num="126", CA Event Channel #6
+https://cdn-01.satoshistreams.net/viewsa/ch126q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA7" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #7" tvg-num="127", CA Event Channel #7
+https://cdn-01.satoshistreams.net/viewsa/ch127q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA8" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #8" tvg-num="128", CA Event Channel #8
+https://cdn-01.satoshistreams.net/viewsa/ch128q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA9" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #9" tvg-num="129", CA Event Channel #9
+https://cdn-01.satoshistreams.net/viewsa/ch129q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA10" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #10" tvg-num="130", CA Event Channel #10
+https://cdn-01.satoshistreams.net/viewsa/ch130q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA11" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #11" tvg-num="131", CA Event Channel #11
+https://cdn-01.satoshistreams.net/viewsa/ch131q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="CA12" group-title="EVENTS (NFL, EPL, PPV)" tvg-logo="https://list.satoshistreams.net/uploads/CA1Small.png" tvg-name="CA Event Channel #12" tvg-num="132", CA Event Channel #12
+https://cdn-01.satoshistreams.net/viewsa/ch132q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="WILLOW.ca" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Willow Cricket" tvg-num="133", Willow Cricket
+https://cdn-01.satoshistreams.net/viewsa/ch133q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="AstroSuperSport.my" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MY ASTRO SS1" tvg-num="134", MY ASTRO SS1
+https://cdn-01.satoshistreams.net/viewsa/ch134q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="AstroSuperSport2.my" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MY ASTRO SS2" tvg-num="135", MY ASTRO SS2
+https://cdn-01.satoshistreams.net/viewsa/ch135q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="AstroSuperSport3.my" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MY ASTRO SS3" tvg-num="136", MY ASTRO SS3
+https://cdn-01.satoshistreams.net/viewsa/ch136q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="AstroSuperSport4.my" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MY ASTRO SS4" tvg-num="137", MY ASTRO SS4
+https://cdn-01.satoshistreams.net/viewsa/ch137q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="AstroSuperSport5.my" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MY ASTRO SS5" tvg-num="138", MY ASTRO SS5
+https://cdn-01.satoshistreams.net/viewsa/ch138q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="AstroArena.my" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MY ASTRO Arena1" tvg-num="139", MY ASTRO Arena1
+https://cdn-01.satoshistreams.net/viewsa/ch139q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="Eurosport.my" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MY Eurosport" tvg-num="140", MY Eurosport
+https://cdn-01.satoshistreams.net/viewsa/ch140q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="beINSports.my" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="MY beIN 1" tvg-num="141", MY beIN 1
+https://cdn-01.satoshistreams.net/viewsa/ch141q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="Vice.us" group-title="TV" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Viceland" tvg-num="142", Viceland
+https://cdn-01.satoshistreams.net/viewsa/ch142q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="NBCSportsonPeacock.us" group-title="US Regional Sports" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="NBCSN" tvg-num="143", NBCSN
+https://cdn-01.satoshistreams.net/viewsa/ch143q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="IV1London.uk" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 2" tvg-num="144", Plus 2
+https://cdn-01.satoshistreams.net/viewsa/ch144q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="BBCOne.uk" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="ITV 1" tvg-num="145", ITV 1
+https://cdn-01.satoshistreams.net/viewsa/ch145q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU7" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="BBC One" tvg-num="146", BBC One
+https://cdn-01.satoshistreams.net/viewsa/ch146q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU8" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 3" tvg-num="147", Plus 3
+https://cdn-01.satoshistreams.net/viewsa/ch147q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU9" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="NZ SS Mix #1" tvg-num="148", NZ SS Mix #1
+https://cdn-01.satoshistreams.net/viewsa/ch148q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU10" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Channel 4" tvg-num="149", Channel 4
+https://cdn-01.satoshistreams.net/viewsa/ch149q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU11" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="NZ SS Mix #2" tvg-num="150", NZ SS Mix #2
+https://cdn-01.satoshistreams.net/viewsa/ch150q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU12" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 7" tvg-num="151", Plus 7
+https://cdn-01.satoshistreams.net/viewsa/ch151q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU13" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 8" tvg-num="152", Plus 8
+https://cdn-01.satoshistreams.net/viewsa/ch152q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU14" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 9" tvg-num="153", Plus 9
+https://cdn-01.satoshistreams.net/viewsa/ch153q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU15" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 10" tvg-num="154", Plus 10
+https://cdn-01.satoshistreams.net/viewsa/ch154q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU16" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 11" tvg-num="155", Plus 11
+https://cdn-01.satoshistreams.net/viewsa/ch155q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU17" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 12" tvg-num="156", Plus 12
+https://cdn-01.satoshistreams.net/viewsa/ch156q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU18" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 13" tvg-num="157", Plus 13
+https://cdn-01.satoshistreams.net/viewsa/ch157q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU19" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 14" tvg-num="158", Plus 14
+https://cdn-01.satoshistreams.net/viewsa/ch158q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU20" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 15" tvg-num="159", Plus 15
+https://cdn-01.satoshistreams.net/viewsa/ch159q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU21" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 16" tvg-num="160", Plus 16
+https://cdn-01.satoshistreams.net/viewsa/ch160q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU22" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 19" tvg-num="161", Plus 19
+https://cdn-01.satoshistreams.net/viewsa/ch161q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU23" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 20" tvg-num="162", Plus 20
+https://cdn-01.satoshistreams.net/viewsa/ch162q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU24" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 21" tvg-num="163", Plus 21
+https://cdn-01.satoshistreams.net/viewsa/ch163q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU25" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 22" tvg-num="164", Plus 22
+https://cdn-01.satoshistreams.net/viewsa/ch164q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU26" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 23" tvg-num="165", Plus 23
+https://cdn-01.satoshistreams.net/viewsa/ch165q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU27" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 24" tvg-num="166", Plus 24
+https://cdn-01.satoshistreams.net/viewsa/ch166q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU28" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 25" tvg-num="167", Plus 25
+https://cdn-01.satoshistreams.net/viewsa/ch167q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU29" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 26" tvg-num="168", Plus 26
+https://cdn-01.satoshistreams.net/viewsa/ch168q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
+#EXTINF:-1 tvg-id="EU30" group-title="TBD(ComingSoon)" tvg-logo="https://list.satoshistreams.net/uploads/" tvg-name="Plus 27" tvg-num="169", Plus 27
+https://cdn-01.satoshistreams.net/viewsa/ch169q1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yNS8yMDIzIDU6NDI6NDUgQU0maGFzaF92YWx1ZT1hUjJEdGxLK3ViUXpCbkxSZWRYQXNRPT0mdmFsaWRtaW51dGVzPTQzMjAwJmlkPTYyODMmaXA9NzAuMTA2LjIzMi4yMTA=
